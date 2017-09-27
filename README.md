@@ -1,11 +1,11 @@
 gvgai Project 1
 =====
 
-This is the framework for the General Video Game Competition 2014 - http://www.gvgai.net/
+This is the framework for the [General Video Game Competition 2014](http://www.gvgai.net/)
 
-Google discussion group - https://groups.google.com/forum/#!forum/the-general-video-game-competition
+[GVGAI Google discussion group](https://groups.google.com/forum/#!forum/the-general-video-game-competition)
 
-To get the original code: https://github.com/EssexUniversityMCTS/gvgai
+To get the original code: [GVGAI github page](https://github.com/EssexUniversityMCTS/gvgai)
 
 How to work on this repository:
 - Download Github desktop or any other program to locally access the repository.
