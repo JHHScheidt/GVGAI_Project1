@@ -1,43 +1,17 @@
-gvgai
+gvgai Project 1
 =====
 
 This is the framework for the General Video Game Competition 2014 - http://www.gvgai.net/
 
-Google group - https://groups.google.com/forum/#!forum/the-general-video-game-competition
+Google discussion group - https://groups.google.com/forum/#!forum/the-general-video-game-competition
 
-## FAQs / Troubleshooting
+To get the original code: https://github.com/EssexUniversityMCTS/gvgai
 
-**3. Where are the Test methods? Due to the explosion of GVGAI competition tracks, we have distributed the main methods in different classes across the code hierarchy:
-
- - Single Player Planning track: tracks.singlePlayer.Test.java
- - 2-Player Planning track: tracks.multiPlayer.TestMultiPlayer.java
- - Level Generation track: tracks.levelGeneration.TestLevelGeneration.java
- - Rule Generation track: tracks.ruleGeneration.TestRuleGeneration.java
-
-
-**2. How do I upload my controller? What files or folder structure do I need? 
-First of all, your controller ```Agent.java``` and any auxiliary files you create should be in a single package folder with your username. For example, if your username is "abc", you should have a package folder named "abc" in the project. Your entire project layout should look something like this:
-
-```groovy
-- abc
-	|- Agent.java
-	|- MyAdditionalFile1.java
-	|- MyAdditionalFile2.java
-- tracks
-- core
-- ontology
-- tools
-```
-
-Then, all you need to do is to zip and upload the "abc" folder. No other folders/files are necessary.
-
-
-**3. I am getting the error `javac1.8 class not found` when running Eclipse and ANT on build.xml**
-This is likely because the ANT version that is installed with your version of Eclipse is old. You can easily fix this problem by doing the following:
-
-- Download the archive of the [latest version of ANT](http://ant.apache.org/bindownload.cgi) (Tested with  Ant 1.9.4)
-- Extract the archive onto a local folder on your computer (e.g., /Users/gvgai/ant/apache-ant-1.9.4/)
-- In Eclipse, go to Eclipse -> Preferences -> Ant -> Runtime
-- Click on "Ant Home'' button on the right.
-- Select the folder, which you extracted ANT into (e.g., /Users/gvgai/ant/apache-ant-1.9.4/)
-
+How to work on this repository:
+- Download Github desktop or any other program to locally access the repository.
+- Clone the repository using the clone/download button on the main page and open in desktop.
+- Store the repository at any desired location, now the repo is available locally.
+- To work: Create a new brench from development, give it an unused name (preferebly something resembling the new code e.g. algorithm name)
+- During working, you can commit and eventually push your code to the online repo using the sync button. In the commit message, please explain what you have done in the commit. Also, if this commit fixes a bug, write in the commit message: fixes #...
+- Create a pull request (via github.com) and assign at least 2 other people to the pull request.
+- Once the pull request is accepted, it can be merged to development.
