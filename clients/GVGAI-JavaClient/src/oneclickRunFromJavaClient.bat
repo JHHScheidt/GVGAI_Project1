@@ -1,6 +1,6 @@
 @echo off
 
-set path=%PATH%;C:\Program Files\Java\jdk1.8.0_121\bin
+set path=%PATH%;C:\Program Files\Java\jdk1.8.0_144\bin
 
 set gameId=0
 set shDir=utils
