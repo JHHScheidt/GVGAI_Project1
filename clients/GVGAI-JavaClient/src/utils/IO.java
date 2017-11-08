@@ -27,7 +27,10 @@ public abstract class IO extends Thread{
     {
         try
         {
-            fileOutput = new PrintWriter(new File("logs/clientLog.txt"), "utf-8");
+            File path = new File("clients/GVGAI-JavaClient/logs");
+            path.mkdirs();
+            File file = new File(path.getPath() + "/clientLog.txt");
+            fileOutput = new PrintWriter(file, "utf-8");
         } catch (Exception e) {
             System.out.println("Exception creating the log file on client: " + e);
             e.printStackTrace();

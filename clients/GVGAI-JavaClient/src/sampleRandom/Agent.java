@@ -63,7 +63,6 @@ public class Agent extends utils.AbstractPlayer {
 //        }
 
         int index = new Random().nextInt(sso.getAvailableActions().size());
-
         return sso.getAvailableActions().get(index);
     }
 

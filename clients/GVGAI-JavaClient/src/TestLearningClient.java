@@ -2,6 +2,7 @@ import utils.ClientComm;
 import utils.CompetitionParameters;
 import utils.ElapsedWallTimer;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -18,7 +19,8 @@ public class TestLearningClient
         assert (CompetitionParameters.USE_SOCKETS);
         /** Init params */
         int gameId = 2;
-        String shDir = "./src/utils";
+        String shDir = "clients/GVGAI-JavaClient/src/utils"; // String shDir = "./src/utils";
+
         String serverDir;
         String serverJar = "";
         String gameFile = "";
@@ -28,7 +30,7 @@ public class TestLearningClient
         } else {
             serverDir = "../..";
         }
-        String agentName = "sampleRandom.Agent";         //Agent to play with
+        String agentName = "customTesting.Agent";         //Agent to play with
         boolean visuals = false;
         /** Get arguments */
         Map<String, List<String>> params = new HashMap<>();
