@@ -30,7 +30,7 @@ public class TestLearningClient
         } else {
             serverDir = "../..";
         }
-        String agentName = "sampleRandom.Agent";         //Agent to play with
+        String agentName = "customTesting.Agent";         //Agent to play with
         boolean visuals = false;
         /** Get arguments */
         Map<String, List<String>> params = new HashMap<>();

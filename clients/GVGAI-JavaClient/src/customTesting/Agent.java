@@ -1,4 +1,4 @@
-package sampleRandom;
+package customTesting;
 
 /**
  * Created by Daniel on 21.05.2017.
@@ -18,6 +18,9 @@ import java.util.Random;
  */
 public class Agent extends utils.AbstractPlayer {
 
+    private double[] lastPosition;
+    private int direction = 1;
+
     /**
      * Public method to be called at the start of the communication. No game has been initialized yet.
      * Perform one-time setup here.
@@ -35,7 +38,7 @@ public class Agent extends utils.AbstractPlayer {
      */
     @Override
     public void init(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer){
-
+        System.out.println(sso.worldDimension[0] + " " + sso.worldDimension[1]);
     }
 
     /**
@@ -48,6 +51,8 @@ public class Agent extends utils.AbstractPlayer {
      * @param elapsedTimer Timer (40ms)
      * @return The action to be performed by the agent.
      */
+
+    int counter = 0;
     @Override
     public Types.ACTIONS act(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer){
 //        int n = 10;
@@ -62,8 +67,23 @@ public class Agent extends utils.AbstractPlayer {
 //            return Types.ACTIONS.ACTION_ESCAPE;
 //        }
 
-        int index = new Random().nextInt(sso.getAvailableActions().size());
-        return sso.getAvailableActions().get(index);
+        //sso.getObservationGrid()
+
+        if (this.lastPosition != null) {
+            if (counter < 10) direction = 1;
+            else if (counter < 20) direction = 2;
+            else if (counter < 30) direction = 3;
+            else if (counter < 40) direction = 4;
+            else direction = 0;
+        }
+        counter++;
+
+        // int index = new Random().nextInt(sso.getAvailableActions().size());
+
+        if (direction != 0) System.out.println(sso.avatarPosition[0] + " " + sso.avatarPosition[1]);
+        this.lastPosition = sso.avatarPosition;
+        //System.out.println(sso.getAvailableActions());
+        return sso.getAvailableActions().get(this.direction);
     }
 
     /**
