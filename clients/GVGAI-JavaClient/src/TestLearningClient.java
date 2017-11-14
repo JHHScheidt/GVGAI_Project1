@@ -19,8 +19,7 @@ public class TestLearningClient
     {
         assert (CompetitionParameters.USE_SOCKETS);
         /** Init params */
-        int gameId = 4;
-        Constants.CURRENT_GAME_ID = gameId;
+        int gameId = 0;
         String shDir = "clients/GVGAI-JavaClient/src/utils"; // String shDir = "./src/utils";
 
         String serverDir;
@@ -80,6 +79,8 @@ public class TestLearningClient
             levelFile = params.get("levelFile").get(0);
         }
         ElapsedWallTimer wallClock = new ElapsedWallTimer();
+
+        Constants.CURRENT_GAME_ID = gameId;
 
         //Available controllers:
         String scriptFile;

@@ -2,7 +2,18 @@
 
 set path=%PATH%;C:\Program Files\Java\jdk1.8.0_144\bin
 
-set gameId=35
+set gameId=-1
+
+:START
+
+TASKKILL /F /T /FI "WINDOWTITLE eq Java-VGDL*"
+
+set /A gameId=gameId+1
+
+echo running game %gameId%
+
+IF %gameId% gtr 111 GOTO END
+
 set shDir=utils
 set serverDir=..\..\..
 
@@ -23,3 +34,7 @@ rem run with screen visualisation
 java -cp %build_folder% TestLearningClient -shDir %shDir% -serverDir %serverDir% -visuals -gameId %gameId%
 rem run without screen visualisation
 rem java -cp %build_folder% TestLearningClient -shDir %shDir% -serverDir %serverDir%
+
+GOTO START
+
+:END
