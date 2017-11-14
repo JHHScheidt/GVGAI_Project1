@@ -18,7 +18,7 @@ public class TestLearningClient
     {
         assert (CompetitionParameters.USE_SOCKETS);
         /** Init params */
-        int gameId = 2;
+        int gameId = 1;
         String shDir = "clients/GVGAI-JavaClient/src/utils"; // String shDir = "./src/utils";
 
         String serverDir;
@@ -30,7 +30,7 @@ public class TestLearningClient
         } else {
             serverDir = "../..";
         }
-        String agentName = "customTesting.Agent";         //Agent to play with
+        String agentName = "classifyAndPlay.Agent";         //Agent to play with
         boolean visuals = false;
         /** Get arguments */
         Map<String, List<String>> params = new HashMap<>();
