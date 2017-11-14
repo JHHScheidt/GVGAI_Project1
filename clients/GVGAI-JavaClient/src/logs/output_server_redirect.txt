@@ -1,0 +1,2 @@
+Listening for transport dt_socket at address: 8888
+[GAME] Game idx:24 game name cops

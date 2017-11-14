@@ -118,7 +118,7 @@ public abstract class Player {
     /**
      * Closes the agent, writing actions to file.
      */
-    final public void teardown(Game played) {
+    public void teardown(Game played) {
         try {
             if((this.actionFile != null && !actionFile.equals("")) && SHOULD_LOG) {
                 writer = new BufferedWriter(new FileWriter(new File(this.actionFile)));
