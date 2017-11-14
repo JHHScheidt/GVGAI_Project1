@@ -1,9 +1,9 @@
 package group.datagather.random;
 
 import group.datagather.constants.Constants;
-import serialization.Observation;
 import serialization.SerializableStateObservation;
 import serialization.Types;
+import utils.AbstractPlayer;
 import utils.ElapsedCpuTimer;
 
 import java.io.File;
@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 
-public class Agent extends utils.AbstractPlayer {
+public class Agent extends AbstractPlayer {
 
 	/**
 	 * getImmovablePositions() array of itype mapped to array of observations, itype = type of sprite, observations in this list are e.g. walls
