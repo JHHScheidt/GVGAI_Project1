@@ -1,14 +1,14 @@
 package group.datagather.constants;
 
-import serialization.Observation;
-import serialization.SerializableStateObservation;
+		import serialization.Observation;
+		import serialization.SerializableStateObservation;
 
 public class Utils {
 
 	public static String serializableStateObservationToString(SerializableStateObservation sso) {
 		Observation[][][] observationGrid = sso.getObservationGrid();
 
-		String observation = "{";
+		String observation = "";
 		if (observationGrid != null) {
 			for (int i = 0; i < observationGrid.length; i++) {
 				for (int j = 0; j < observationGrid[i].length; j++) {
@@ -18,7 +18,6 @@ public class Utils {
 				}
 			}
 		}
-		observation += "}";
 
 		return "{" + sso.gameScore +
 				";" + sso.gameTick +

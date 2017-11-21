@@ -20,7 +20,7 @@ public class DataSaver implements Runnable {
 		try {
 			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
 			for (Tuple tuple : this.data)
-				writer.print(tuple);
+				writer.print(tuple + "\n");
 
 			writer.flush();
 			writer.close();

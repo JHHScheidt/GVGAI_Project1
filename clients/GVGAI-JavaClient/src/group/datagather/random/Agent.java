@@ -53,9 +53,7 @@ public class Agent extends AbstractPlayer {
 		Types.ACTIONS action = sso.getAvailableActions().get(this.random.nextInt(sso.getAvailableActions().size()));
 
 		// store new data and set new state of previous action
-		Tuple dataPoint = new Tuple(state, action, null);
-		if (!this.firstMove) this.data.get(this.data.size() - 1).setNewState(state);
-		this.data.add(dataPoint);
+		this.data.add(new Tuple(state, action));
 
 		return action;
 	}

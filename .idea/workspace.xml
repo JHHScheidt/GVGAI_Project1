@@ -2,131 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df81223c-1be2-4d9b-b8a4-456d64d7d48e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/10_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/10_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/10_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/10_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/10_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/11_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/11_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/11_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/11_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/11_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/12_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/12_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/12_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/12_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/12_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/13_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/13_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/13_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/13_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/13_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/14_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/14_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/14_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/14_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/14_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/15_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/15_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/15_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/15_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/15_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/16_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/16_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/16_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/16_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/16_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/17_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/17_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/17_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/17_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/17_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/18_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/18_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/18_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/18_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/18_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/19_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/19_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/19_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/19_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/19_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/1_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/1_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/1_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/1_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/1_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/20_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/20_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/20_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/20_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/20_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/21_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/21_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/21_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/21_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/21_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/22_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/22_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/22_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/22_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/22_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/23_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/2_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/2_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/2_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/2_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/2_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/3_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/3_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/3_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/3_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/3_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/4_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/4_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/4_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/4_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/4_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/5_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/5_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/5_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/5_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/5_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/6_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/6_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/6_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/6_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/6_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/7_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/7_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/7_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/7_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/7_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/8_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/8_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/8_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/8_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/8_5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/9_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/9_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/9_3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/9_4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/9_5.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/core/game/Game$Bucket.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/core/game/Game$Bucket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/core/game/Game.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/core/game/Game.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/core/player/Player.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/core/player/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/tracks/singlePlayer/Test.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/server-out/tracks/singlePlayer/Test.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/data/0_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/data/0_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/data/0_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/data/0_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/res/data/0_5.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/constants/DataSaver.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/constants/DataSaver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/constants/Tuple.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/constants/Tuple.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/constants/Utils.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/constants/Utils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/random/Agent.class" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/client-out/group/datagather/random/Agent.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DataSaver.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DataSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Tuple.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Tuple.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect_err.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect_err.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_1.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/sources.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/sources.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -138,33 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestLearningClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/TestLearningClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="9" lean-forward="false" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            <state relative-caret-position="544">
+              <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,53 +40,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArcadeMachine.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/ArcadeMachine.java">
+      <file leaf-file-name="Quicksort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Quicksort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6732">
-              <caret line="414" column="13" lean-forward="false" selection-start-line="414" selection-start-column="12" selection-end-line="414" selection-end-column="13" />
+            <state relative-caret-position="459">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DeicticView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DeicticView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="50" column="54" lean-forward="false" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/core/player/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1853">
-              <caret line="120" column="4" lean-forward="false" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/sampleMCTS/Agent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="DataSaver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/DataSaver.java">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DataSaver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Tuple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/Tuple.java">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Tuple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            <state relative-caret-position="306">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="47" column="63" lean-forward="false" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -227,21 +108,29 @@
       <file leaf-file-name="SerializableStateObservation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/core/game/SerializableStateObservation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1751">
-              <caret line="115" column="48" lean-forward="false" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="48" />
+            <state relative-caret-position="476">
+              <caret line="175" column="30" lean-forward="false" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/Utils.java">
+      <file leaf-file-name="StateObservation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/game/StateObservation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="53" column="103" lean-forward="false" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Observation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/core/game/Observation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-244">
+              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -253,6 +142,7 @@
       <find>toPlay</find>
       <find>tearD</find>
       <find>getAvailableActions</find>
+      <find>avatarResour</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -271,15 +161,22 @@
         <option value="$PROJECT_DIR$/src/tracks/singlePlayer/custom/DataSaver.java" />
         <option value="$PROJECT_DIR$/src/tracks/singlePlayer/custom/Utils.java" />
         <option value="$PROJECT_DIR$/src/tracks/singlePlayer/Test.java" />
+        <option value="$PROJECT_DIR$/src/core/game/SerializableStateObservation.java" />
+        <option value="$PROJECT_DIR$/src/core/game/StateObservation.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Tuple.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DataSaver.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Quicksort.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DeicticView.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="y" value="-18" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="x" value="3081" />
+    <option name="y" value="123" />
+    <option name="width" value="1734" />
+    <option name="height" value="1247" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -379,7 +276,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="abstractP&#9;PSI&#9;JAVA://core.player.AbstractPlayer&#10;seriali&#9;PSI&#9;JAVA://core.game.SerializableStateObservation" />
+    <property name="SearchEverywhereHistoryKey" value="observat&#9;FILE&#9;file://D:/simon/Programming/java/Workspace-GVGAI/GVGAI_Project1/src/core/game/Observation.java&#10;observation&#9;PSI&#9;JAVA://core.game.Observation&#10;obser&#9;FILE&#9;file://D:/simon/Programming/java/Workspace-GVGAI/GVGAI_Project1/src/core/game/StateObservation.java&#10;Seri&#9;FILE&#9;file://D:/simon/Programming/java/Workspace-GVGAI/GVGAI_Project1/src/core/game/SerializableStateObservation.java&#10;abstractP&#9;PSI&#9;JAVA://core.player.AbstractPlayer&#10;seriali&#9;PSI&#9;JAVA://core.game.SerializableStateObservation" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -466,6 +363,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="df81223c-1be2-4d9b-b8a4-456d64d7d48e" name="Default" comment="" />
@@ -477,7 +377,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="3456" height="1456" extended-state="6" />
+    <frame x="3432" y="132" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -488,7 +388,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25147232" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19829424" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -637,17 +537,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/game/StateObservation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4443">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/sampleMCTS/SingleMCTSPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="64" column="48" lean-forward="true" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,13 +576,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/Tuple.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -709,14 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="57" column="30" lean-forward="false" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/core/game/SerializableStateObservation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1751">
-          <caret line="115" column="48" lean-forward="false" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -759,10 +638,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/game/SerializableStateObservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="175" column="30" lean-forward="false" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/game/StateObservation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="47" column="63" lean-forward="false" selection-start-line="47" selection-start-column="63" selection-end-line="47" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Tuple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        <state relative-caret-position="544">
+          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/core/game/Observation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Quicksort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DataSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DeicticView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="50" column="54" lean-forward="false" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
