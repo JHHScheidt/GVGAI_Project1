@@ -1,6 +1,6 @@
 package group.datagather.constants;
 
-public class Quicksort  {
+public class QuickSort {
 
 	private double[][] numbers;
 	private int number;
@@ -19,7 +19,7 @@ public class Quicksort  {
 	private void quicksort(int low, int high) {
 		int i = low, j = high;
 		// Get the pivot element from the middle of the list
-		int pivot = numbers[low + (high-low)/2][1];
+		double pivot = numbers[low + (high-low)/2][1];
 
 		// Divide into two lists
 		while (i <= j) {
@@ -53,7 +53,7 @@ public class Quicksort  {
 	}
 
 	private void exchange(int i, int j) {
-		int tempId = numbers[i][0];
+		int tempId = (int) numbers[i][0];
 		double tempValue = numbers[i][1];
 		numbers[i][0] = numbers[j][0];
 		numbers[i][1] = numbers[j][1];
