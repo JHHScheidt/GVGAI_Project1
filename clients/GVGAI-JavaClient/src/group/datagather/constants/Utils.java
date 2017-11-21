@@ -1,6 +1,6 @@
 package group.datagather.constants;
 
-		import serialization.Observation;
+import serialization.Observation;
 		import serialization.SerializableStateObservation;
 
 public class Utils {

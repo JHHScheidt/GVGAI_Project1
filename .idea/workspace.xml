@@ -25,22 +25,12 @@
       <file leaf-file-name="DeicticView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DeicticView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="68">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#461#462#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#430#431#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0_0.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/preprocessed/0_0.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3102">
-              <caret line="6915" column="1" lean-forward="true" selection-start-line="6915" selection-start-column="1" selection-end-line="6915" selection-end-column="1" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -48,8 +38,8 @@
       <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,6 +94,7 @@
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DataSaver.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/QuickSort.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DeicticView.java" />
       </list>
     </option>
@@ -359,14 +350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="28" column="33" lean-forward="true" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/preprocessed/0_0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3102">
@@ -375,13 +358,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/DeicticView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        <state relative-caret-position="68">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,10 +6,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- *
- * @author Marciano
- */
 public class DeicticView {
 
 	private final int AVAILABLE_ACTIONS = 5;
