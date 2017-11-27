@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public class DeicticView {
 
+	private final int CATEGORY_NORMALISATION_FACTOR = 15;
+	private final int SCORE_NORMALISATION_FACTOR = 10000;
 	private final int AVAILABLE_ACTIONS = 5;
 	private final int UP = 0, DOWN = 1, LEFT = 2, RIGHT = 3, USE = 4;
 	private final int DV = 10;
@@ -42,7 +44,7 @@ public class DeicticView {
 		double posX = Double.parseDouble(position[0])/blockSize;
 		double posY = Double.parseDouble(position[1])/blockSize;
 
-		return new double[] {category, posX / worldDimension[0], posY / worldDimension[1], (Math.sqrt(Math.pow(posX - currentAvatarPosition[0], 2) + Math.pow(posY - currentAvatarPosition[1], 2))) / Math.sqrt(Math.pow(worldDimension[0], 2) + Math.pow(worldDimension[1], 2))};
+		return new double[] {category / this.CATEGORY_NORMALISATION_FACTOR, posX / worldDimension[0], posY / worldDimension[1], (Math.sqrt(Math.pow(posX - currentAvatarPosition[0], 2) + Math.pow(posY - currentAvatarPosition[1], 2))) / Math.sqrt(Math.pow(worldDimension[0], 2) + Math.pow(worldDimension[1], 2))};
 	}
 
 	public void readStateSpace(ArrayList<String> ss){
@@ -53,7 +55,7 @@ public class DeicticView {
 
 		double blockSize = Double.parseDouble(avatarInfo[5]);
 
-		double gameScore = Double.parseDouble(avatarInfo[0]);
+		double gameScore = Double.parseDouble(avatarInfo[0]) / this.SCORE_NORMALISATION_FACTOR;
 		double avatarSpeed = Double.parseDouble(avatarInfo[6]);
 		double avatarHealthPoints = Double.parseDouble(avatarInfo[11]);
 		double[] worldDimension = readWorldDimensionAndNormalise(avatarInfo[4], blockSize);
@@ -80,12 +82,12 @@ public class DeicticView {
 
 		String actionString = ss.get(ss.size() - 1).substring(2, ss.get(ss.size() - 1).length() - 1);
 		double actionPerformed;
-		if (actionString.equals("ACTION_RIGHT")) actionPerformed = RIGHT;
-		else if (actionString.equals("ACTION_LEFT"))  actionPerformed = LEFT;
-		else if (actionString.equals("ACTION_UP")) actionPerformed = UP;
-		else if (actionString.equals("ACTION_DOWN")) actionPerformed = DOWN;
-		else actionPerformed = USE;
-		actionPerformed /= (double) AVAILABLE_ACTIONS;
+		if (actionString.equals("ACTION_RIGHT")) actionPerformed = this.RIGHT;
+		else if (actionString.equals("ACTION_LEFT"))  actionPerformed = this.LEFT;
+		else if (actionString.equals("ACTION_UP")) actionPerformed = this.UP;
+		else if (actionString.equals("ACTION_DOWN")) actionPerformed = this.DOWN;
+		else actionPerformed = this.USE;
+		actionPerformed /= (double) this.AVAILABLE_ACTIONS;
 
 		String result = "{\n";
 		result += gameScore + ";" + avatarSpeed + ";" + avatarHealthPoints + ";" + currentAvatarOrientation[0] + ";" + currentAvatarOrientation[1] + ";" + currentAvatarPosition[0] + ";" + currentAvatarPosition[1] + ";" + actionPerformed + "\n";
