@@ -12,10 +12,10 @@ public class DeicticView {
 
 	private ArrayList<String> allStates;
 
-	private Quifeq quickSort;
+	private QuickSort quickSort;
 
 	public DeicticView(){
-		this.quickSort = new Quifeq();
+		this.quickSort = new QuickSort();
 	}
 
 	public static void main(String[] args) throws IOException {

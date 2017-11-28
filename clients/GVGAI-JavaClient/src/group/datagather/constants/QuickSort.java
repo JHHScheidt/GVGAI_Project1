@@ -1,6 +1,6 @@
 package group.datagather.constants;
 
-public class Quifeq {
+public class QuickSort {
 
 	private double[][] numbers;
 	private int number;
