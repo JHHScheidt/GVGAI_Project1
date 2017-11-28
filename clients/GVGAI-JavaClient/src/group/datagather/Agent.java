@@ -28,7 +28,7 @@ public class Agent extends AbstractPlayer {
 											new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
 											new Layer(OUTPUT_DIMENSION + 0, false));
 		try {
-			this.network.loadWeights("clients/GVGAI-JavaClient/src/" + Constants.NETWORK_WEIGHTS_DIR + "name.txt");
+			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "name.txt");
 		} catch (IOException e) {
 			System.err.println("Loading the weights went wrong! quitting");
 			System.exit(0);
@@ -48,7 +48,9 @@ public class Agent extends AbstractPlayer {
 		networkInput[5] = sso.getAvatarPosition()[0] / sso.blockSize / sso.worldDimension[0];
 		networkInput[6] = sso.getAvatarPosition()[1] / sso.blockSize / sso.worldDimension[1];
 
-		System.out.println(System.nanoTime() - start);
+
+
+		System.out.println((System.nanoTime() - start) / 1000000.0);
 
 		return null;
 	}
