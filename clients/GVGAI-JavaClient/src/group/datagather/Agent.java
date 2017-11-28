@@ -26,9 +26,9 @@ public class Agent extends AbstractPlayer {
 											new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
 											new Layer(ENCODED_SIZE + 1, true),
 											new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
-											new Layer(OUTPUT_DIMENSION, false));
+											new Layer(OUTPUT_DIMENSION + 0, false));
 		try {
-			network.loadWeights("clients/GVGAI-JavaClient/src/" + Constants.NETWORK_WEIGHTS_DIR + "name.txt");
+			this.network.loadWeights("clients/GVGAI-JavaClient/src/" + Constants.NETWORK_WEIGHTS_DIR + "name.txt");
 		} catch (IOException e) {
 			System.err.println("Loading the weights went wrong! quitting");
 			System.exit(0);
@@ -37,11 +37,18 @@ public class Agent extends AbstractPlayer {
 
 	@Override
 	public Types.ACTIONS act(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer) {
+		long start = System.nanoTime();
+
 		double[] networkInput = new double[INPUT_DIMENSION];
-		networkInput[0] = sso.getGameScore() / Constants.SCORE_NORMALISATION_FACTOR;
-		networkInput[]
+		networkInput[0] = sso.getGameScore() / Constants.NORMALISATION_FACTOR;
+		networkInput[1] = sso.getAvatarSpeed() / Constants.NORMALISATION_FACTOR;
+		networkInput[2] = sso.getAvatarHealthPoints() / Constants.NORMALISATION_FACTOR;
+		networkInput[3] = sso.getAvatarOrientation()[0];
+		networkInput[4] = sso.getAvatarOrientation()[1];
+		networkInput[5] = sso.getAvatarPosition()[0] / sso.blockSize / sso.worldDimension[0];
+		networkInput[6] = sso.getAvatarPosition()[1] / sso.blockSize / sso.worldDimension[1];
 
-
+		System.out.println(System.nanoTime() - start);
 
 		return null;
 	}

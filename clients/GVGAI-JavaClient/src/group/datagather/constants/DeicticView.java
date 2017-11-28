@@ -51,9 +51,9 @@ public class DeicticView {
 
 		double blockSize = Double.parseDouble(avatarInfo[5]);
 
-		double gameScore = Double.parseDouble(avatarInfo[0]) / SCORE_NORMALISATION_FACTOR;
-		double avatarSpeed = Double.parseDouble(avatarInfo[6]);
-		double avatarHealthPoints = Double.parseDouble(avatarInfo[11]);
+		double gameScore = Double.parseDouble(avatarInfo[0]) / NORMALISATION_FACTOR;
+		double avatarSpeed = Double.parseDouble(avatarInfo[6]) / NORMALISATION_FACTOR;
+		double avatarHealthPoints = Double.parseDouble(avatarInfo[11]) / NORMALISATION_FACTOR;
 		double[] worldDimension = readWorldDimensionAndNormalise(avatarInfo[4], blockSize);
 		double[] currentAvatarOrientation = readWorldDimensionAndNormalise(avatarInfo[7], 1.0);
 		double[] currentAvatarPosition = readCoordinateAndNormalise(avatarInfo[8], blockSize, worldDimension);
