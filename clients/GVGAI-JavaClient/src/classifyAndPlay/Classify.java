@@ -47,7 +47,10 @@ public class Classify {
         //It should try to hit an enemy if possible.
         if(this.possCat[0]){
             Observation[][][] all = this.currentState.getObservationGrid();
-            System.out.println(all[0][0][0].itype);
+//            System.out.println(all[0][0][0].position);
+//            if(all[0][0][0].position){
+//                
+//            }
 //            Observation[][] NPC = this.currentState.getNPCPositions();
 //            System.out.println(NPC.length);
 //            System.out.println(NPC[0].length);
