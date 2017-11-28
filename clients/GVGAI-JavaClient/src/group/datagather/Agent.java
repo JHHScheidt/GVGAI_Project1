@@ -48,6 +48,13 @@ public class Agent extends AbstractPlayer {
 		networkInput[5] = sso.getAvatarPosition()[0] / sso.blockSize / sso.worldDimension[0];
 		networkInput[6] = sso.getAvatarPosition()[1] / sso.blockSize / sso.worldDimension[1];
 
+//
+//				observations
+//
+//				door dat ding heen
+//
+//
+//		networkInput[networkInput.length - 1] = ... acties
 
 
 		System.out.println((System.nanoTime() - start) / 1000000.0);

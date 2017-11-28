@@ -40,7 +40,7 @@ public class DeicticView {
 		double posX = Double.parseDouble(position[0])/blockSize;
 		double posY = Double.parseDouble(position[1])/blockSize;
 
-		return new double[] {category / CATEGORY_NORMALISATION_FACTOR, posX / worldDimension[0], posY / worldDimension[1], (Math.sqrt(Math.pow(posX - currentAvatarPosition[0], 2) + Math.pow(posY - currentAvatarPosition[1], 2))) / Math.sqrt(Math.pow(worldDimension[0], 2) + Math.pow(worldDimension[1], 2))};
+		return new double[] {category / CATEGORY_NORMALISATION_FACTOR, posX / worldDimension[0], posY / worldDimension[1], (Math.pow(posX - currentAvatarPosition[0], 2) + Math.pow(posY - currentAvatarPosition[1], 2)) / Math.pow(worldDimension[0], 2) + Math.pow(worldDimension[1], 2)};
 	}
 
 	public void readStateSpace(ArrayList<String> ss){
