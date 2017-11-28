@@ -1,2 +1,9 @@
 Listening for transport dt_socket at address: 8888
-[GAME] Game idx:2 game name assemblyline
+[GAME] Game idx:0 game name aliens
+[PHASE] Starting First Phase of Training in 3 levels.
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:62.0, timesteps:555
+[TRAINING] Result (1->win; 0->lose): level:1, Player0:0, Player0-Score:59.0, timesteps:797
+[TRAINING] Result (1->win; 0->lose): level:2, Player0:0, Player0-Score:54.0, timesteps:885
+[PHASE] Starting Second Phase of Training in 3 levels.
+[TRAINING] Result (1->win; 0->lose): level:3, Player0:0, Player0-Score:27.0, timesteps:597
+[TRAINING] Result (1->win; 0->lose): level:1, Player0:1, Player0-Score:58.0, timesteps:692

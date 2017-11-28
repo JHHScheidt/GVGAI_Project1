@@ -10,9 +10,6 @@ import utils.AbstractPlayer;
 import utils.ElapsedCpuTimer;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -23,7 +20,7 @@ public class Agent extends AbstractPlayer {
 	 * getMovablePositions() array of itype mapped to array of bservations, observations in here are e.g. pushable objects / collectables
 	 */
 
-	private ArrayList<Tuple> data;
+	private ArrayList<String> data;
 
 	private Random random;
 
@@ -32,7 +29,7 @@ public class Agent extends AbstractPlayer {
 	public Agent() {
 		this.lastSsoType = Types.LEARNING_SSO_TYPE.JSON;
 
-		File directory = new File(Constants.OUTPUT_DIR);
+		File directory = new File(Constants.RAW_OUTPUT_DIR);
 		if (!directory.exists()) directory.mkdirs();
 
 		this.data = new ArrayList<>();
@@ -53,16 +50,14 @@ public class Agent extends AbstractPlayer {
 		Types.ACTIONS action = sso.getAvailableActions().get(this.random.nextInt(sso.getAvailableActions().size()));
 
 		// store new data and set new state of previous action
-		Tuple dataPoint = new Tuple(state, action, null);
-		if (!this.firstMove) this.data.get(this.data.size() - 1).setNewState(state);
-		this.data.add(dataPoint);
+		this.data.add((new Tuple(state, action)).toString());
 
 		return action;
 	}
 
 	@Override
 	public int result(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer) {
-		Thread thread = new Thread(new DataSaver(this.data));
+		Thread thread = new Thread(new DataSaver(this.data, new File(Constants.RAW_OUTPUT_DIR + Constants.CURRENT_GAME_ID + "_" + Constants.CURRENT_LEVEL_ID + ".txt")));
 		thread.start();
 		this.data = new ArrayList<>();
 
