@@ -83,7 +83,7 @@ public class DeicticView {
 		else if (actionString.equals("ACTION_UP")) actionPerformed = UP;
 		else if (actionString.equals("ACTION_DOWN")) actionPerformed = DOWN;
 		else actionPerformed = USE;
-		actionPerformed /= (double) AVAILABLE_ACTIONS;
+		actionPerformed /= AVAILABLE_ACTIONS;
 
 		String result = "{\n";
 		result += gameScore + ";" + avatarSpeed + ";" + avatarHealthPoints + ";" + currentAvatarOrientation[0] + ";" + currentAvatarOrientation[1] + ";" + currentAvatarPosition[0] + ";" + currentAvatarPosition[1] + ";" + actionPerformed + "\n";
