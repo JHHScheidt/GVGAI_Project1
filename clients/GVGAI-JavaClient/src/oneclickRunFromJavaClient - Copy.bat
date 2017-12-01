@@ -1,5 +1,7 @@
 @echo off
 
+TASKKILL /F /T /FI "WINDOWTITLE eq Java-VGDL*"
+
 set path=%PATH%;C:\Program Files\Java\jdk1.8.0_144\bin
 
 set gameId=0

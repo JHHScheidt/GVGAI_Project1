@@ -60,7 +60,6 @@ public class NeuralNetwork {
 
 	public void loadWeights(String path) throws IOException {
 		File file = new File(path);
-		System.out.println(file.getAbsolutePath());
 		BufferedReader reader = new BufferedReader(new FileReader(file));
 
 		int layerId = 0;
