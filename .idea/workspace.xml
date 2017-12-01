@@ -15,8 +15,8 @@
       <file leaf-file-name="encoderLearn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderLearn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="10" />
+            <state relative-caret-position="272">
+              <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -25,9 +25,21 @@
       <file leaf-file-name="encoderPredict.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderPredict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="98" column="89" lean-forward="false" selection-start-line="98" selection-start-column="89" selection-end-line="98" selection-end-column="89" />
+            <state relative-caret-position="1172">
+              <caret line="105" column="72" lean-forward="true" selection-start-line="105" selection-start-column="72" selection-end-line="105" selection-end-column="72" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="encoderQValuesCaller.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderQValuesCaller.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-460">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,17 +47,17 @@
       <file leaf-file-name="encoderWriteWeights.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderWriteWeights.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="26" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weights_10_48s_38s_28s_18s_28s_38s_47_mean_squared_error_adam.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="weights_10_48s_38s_28s_18s_28s_38s_47_mean_squared_error_adam.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/results/weights_10_48s_38s_28s_18s_28s_38s_47_mean_squared_error_adam.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2643">
+            <state relative-caret-position="-2439">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -53,6 +65,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -78,6 +97,8 @@
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderWriteWeights.py" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderPredict.py" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderLearn.py" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderActivationValues.py" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderWriteActivationValues.py" />
       </list>
     </option>
   </component>
@@ -207,6 +228,14 @@
               <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
               <item name="GVGAI-JavaClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="raw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GVGAI-JavaClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sampleLearner" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -241,7 +270,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.encoderWriteWeights">
+  <component name="RunManager" selected="Python.encoderQValuesCaller">
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -470,6 +499,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="encoderQValuesCaller" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GVGAI-JavaClient" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderQValuesCaller.py" />
+      <option name="PARAMETERS" value="&quot;10_48s_38s_28s_18s_28s_38s_47_mean_squared_error_adam&quot; &quot;0_0.txt&quot;" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="encoderWriteWeights" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -488,11 +535,12 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Python.encoderWriteWeights" />
-      <item index="1" class="java.lang.String" itemvalue="Python.autoEncoder" />
-      <item index="2" class="java.lang.String" itemvalue="Python.encoderPredict" />
-      <item index="3" class="java.lang.String" itemvalue="Python.encoderLearn" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.encoderQValuesCaller" />
+      <item index="1" class="java.lang.String" itemvalue="Python.encoderWriteWeights" />
+      <item index="2" class="java.lang.String" itemvalue="Python.autoEncoder" />
+      <item index="3" class="java.lang.String" itemvalue="Python.encoderPredict" />
+      <item index="4" class="java.lang.String" itemvalue="Python.encoderLearn" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -529,7 +577,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -565,20 +613,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="37" column="20" lean-forward="false" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/0_2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="159" lean-forward="false" selection-start-line="0" selection-start-column="159" selection-end-line="0" selection-end-column="159" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/random/Agent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1">
@@ -857,40 +891,58 @@
         <state relative-caret-position="453">
           <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderLearn.py">
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderActivationValues.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="58" column="10" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderPredict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="98" column="89" lean-forward="false" selection-start-line="98" selection-start-column="89" selection-end-line="98" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderWriteWeights.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/results/weights_10_48s_38s_28s_18s_28s_38s_47_mean_squared_error_adam.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2643">
+        <state relative-caret-position="-2439">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderPredict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1172">
+          <caret line="105" column="72" lean-forward="true" selection-start-line="105" selection-start-column="72" selection-end-line="105" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderLearn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderWriteWeights.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="26" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/encoderQValuesCaller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-460">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
