@@ -1,3 +1,4 @@
+import group.datagather.constants.Constants;
 import utils.ClientComm;
 import utils.CompetitionParameters;
 import utils.ElapsedWallTimer;
@@ -18,7 +19,7 @@ public class TestLearningClient
     {
         assert (CompetitionParameters.USE_SOCKETS);
         /** Init params */
-        int gameId = 2;
+        int gameId = 0;
         String shDir = "clients/GVGAI-JavaClient/src/utils"; // String shDir = "./src/utils";
 
         String serverDir;
@@ -30,7 +31,7 @@ public class TestLearningClient
         } else {
             serverDir = "../..";
         }
-        String agentName = "customTesting.Agent";         //Agent to play with
+        String agentName = "group.datagather.Agent";         //Agent to play with
         boolean visuals = false;
         /** Get arguments */
         Map<String, List<String>> params = new HashMap<>();
@@ -78,6 +79,8 @@ public class TestLearningClient
             levelFile = params.get("levelFile").get(0);
         }
         ElapsedWallTimer wallClock = new ElapsedWallTimer();
+
+        Constants.CURRENT_GAME_ID = gameId;
 
         //Available controllers:
         String scriptFile;
