@@ -1,11 +1,19 @@
 Exception in thread "main" java.lang.StackOverflowError
+<<<<<<< HEAD
+	at java.base/java.util.regex.Matcher.getTextLength(Unknown Source)
+	at java.base/java.util.regex.Matcher.reset(Unknown Source)
+	at java.base/java.util.regex.Matcher.region(Unknown Source)
+	at java.base/java.util.Scanner.findPatternInBuffer(Unknown Source)
+	at java.base/java.util.Scanner.findWithinHorizon(Unknown Source)
+	at java.base/java.util.Scanner.hasNextLine(Unknown Source)
+=======
 	at java.util.regex.Matcher.getTextLength(Unknown Source)
 	at java.util.regex.Matcher.region(Unknown Source)
 	at java.util.Scanner.findPatternInBuffer(Unknown Source)
 	at java.util.Scanner.findWithinHorizon(Unknown Source)
 	at java.util.Scanner.hasNextLine(Unknown Source)
+>>>>>>> refs/remotes/origin/development
 	at tracks.singleLearning.utils.SocketComm.commRecv(SocketComm.java:101)
-	at tracks.singleLearning.utils.SocketComm.commRecv(SocketComm.java:145)
 	at tracks.singleLearning.utils.SocketComm.commRecv(SocketComm.java:145)
 	at tracks.singleLearning.utils.SocketComm.commRecv(SocketComm.java:145)
 	at tracks.singleLearning.utils.SocketComm.commRecv(SocketComm.java:145)
