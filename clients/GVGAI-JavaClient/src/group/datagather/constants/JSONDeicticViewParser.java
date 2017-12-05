@@ -26,6 +26,7 @@ public class JSONDeicticViewParser implements Runnable {
 
 	@Override
 	public void run() {
+		System.out.println("Running for file " + this.dataFile);
 		JSONArray array = null;
 		try {
 			array = (JSONArray) this.parser.parse(new FileReader(this.dataFile));
@@ -38,6 +39,7 @@ public class JSONDeicticViewParser implements Runnable {
 		}
 
 		JSONArray result = new JSONArray();
+
 		for (int i = 0; i < array.size(); i++) {
 			JSONObject sans = (JSONObject) array.get(i);
 
@@ -54,7 +56,6 @@ public class JSONDeicticViewParser implements Runnable {
 			else actionPerformed = USE;
 			actionPerformed /= AVAILABLE_ACTIONS;
 
-
 			subResult.put("state", this.parseState((JSONObject) sans.get("state")));
 			subResult.put("action", actionPerformed);
 			subResult.put("newState", this.parseState((JSONObject) sans.get("newState")));
@@ -62,13 +63,14 @@ public class JSONDeicticViewParser implements Runnable {
 			result.add(subResult);
 		}
 
-		File outputFile = new File(Constants.PREPROCESSED_OUTPUT_DIR + this.dataFile.getName());
+		File outputFile = new File("clients/GVGAI-JavaClient/src/" + Constants.PREPROCESSED_OUTPUT_DIR + this.dataFile.getName());
 		try {
+			outputFile.createNewFile();
 			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
-			writer.print(result.toJSONString());
+			writer.write(result.toJSONString());
 			writer.flush();
 			writer.close();
-		} catch (FileNotFoundException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
@@ -76,31 +78,31 @@ public class JSONDeicticViewParser implements Runnable {
 	private JSONObject parseState(JSONObject state) {
 		JSONObject result = new JSONObject();
 
-		double blockSize = (double) state.get("blockSize");
-		double width = ((double) ((JSONArray) state.get("worldDimension")).get(0)) / blockSize;
-		double height = ((double) ((JSONArray) state.get("worldDimension")).get(1)) / blockSize;
+		double blockSize = Double.parseDouble(state.get("blockSize").toString());
+		double width = Double.parseDouble(((JSONArray) state.get("worldDimension")).get(0).toString()) / blockSize;
+		double height = Double.parseDouble(((JSONArray) state.get("worldDimension")).get(1).toString()) / blockSize;
 
-		result.put("gameScore", ((double) state.get("gameScore")) / Constants.NORMALISATION_FACTOR);
-		result.put("avatarSpeed", ((double) state.get("avatarSpeed")) / Constants.NORMALISATION_FACTOR);
-		result.put("avatarHealthPoints", ((double) state.get("avatarHealthPoints")) / Constants.NORMALISATION_FACTOR);
+		result.put("gameScore", Double.parseDouble(state.get("gameScore").toString()) / Constants.NORMALISATION_FACTOR);
+		result.put("avatarSpeed", Double.parseDouble(state.get("avatarSpeed").toString()) / Constants.NORMALISATION_FACTOR);
+		result.put("avatarHealthPoints", Double.parseDouble(state.get("avatarHealthPoints").toString()) / Constants.NORMALISATION_FACTOR);
 		result.put("avatarOrientation", state.get("avatarOrientation"));
 
 		JSONArray position = (JSONArray) state.get("avatarPosition");
 		JSONArray normalisedPosition = new JSONArray();
-		normalisedPosition.add(((double) position.get(0)) / blockSize / width);
-		normalisedPosition.add(((double) position.get(1)) / blockSize / height);
+		normalisedPosition.add(Double.parseDouble(position.get(0).toString()) / blockSize / width);
+		normalisedPosition.add(Double.parseDouble(position.get(1).toString()) / blockSize / height);
 		result.put("avatarPosition", normalisedPosition);
 
-		double x = (double) normalisedPosition.get(0);
-		double y = (double) normalisedPosition.get(1);
+		double x = Double.parseDouble(normalisedPosition.get(0).toString());
+		double y = Double.parseDouble(normalisedPosition.get(1).toString());
 
 		JSONArray observations = (JSONArray) state.get("observations");
 		double[][] observationDistances = new double[observations.size()][2];
 		double observationX, observationY;
 		for (int i = 0; i < observationDistances.length; i++) {
 			JSONArray observationPosition = (JSONArray) ((JSONObject) observations.get(i)).get("position");
-			observationX = (double) observationPosition.get(0) / blockSize / width;
-			observationY = (double) observationPosition.get(1) / blockSize / height;
+			observationX = Double.parseDouble(observationPosition.get(0).toString()) / blockSize / width;
+			observationY = Double.parseDouble(observationPosition.get(1).toString()) / blockSize / height;
 
 			observationDistances[i][0] = i;
 			observationDistances[i][1] = Math.pow(observationX - x, 2) + Math.pow(observationY - y, 2);
@@ -114,6 +116,9 @@ public class JSONDeicticViewParser implements Runnable {
 		for (int i = 0; i < size; i++) {
 			JSONObject temp = (JSONObject) observations.get((int) observationDistances[i][0]);
 			temp.put("sqDist", observationDistances[i][1]);
+			temp.remove("itype");
+			temp.remove("reference");
+			temp.remove("obsId");
 			selectedObservations.add(temp);
 		}
 		result.put("observations", selectedObservations);
@@ -124,7 +129,7 @@ public class JSONDeicticViewParser implements Runnable {
 	public static void main(String[] args) throws IOException {
 		ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
-		File folder = new File("GVGAI_Project1/clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
+		File folder = new File("clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
 		File[] files = folder.listFiles();
 		for (int i = 0; i < files.length; i++)
 			service.submit(new JSONDeicticViewParser(files[i]));

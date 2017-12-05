@@ -85,7 +85,7 @@ public class Utils {
 		JSONObject object = new JSONObject();
 		object.put("gameScore", sso.getGameScore());
 		object.put("gameTick", sso.getGameTick());
-		object.put("gameWinner", sso.getGameWinner());
+		object.put("gameWinner", sso.getGameWinner().toString());
 		object.put("gameOver", sso.isGameOver());
 
 		JSONArray worldDimension = new JSONArray();
@@ -107,7 +107,7 @@ public class Utils {
 		position.add(sso.getAvatarPosition().y);
 		object.put("avatarPosition", position);
 
-		object.put("avatarLastAction", sso.getAvatarLastAction());
+		object.put("avatarLastAction", sso.getAvatarLastAction().toString());
 		object.put("avatarType", sso.getAvatarType());
 		object.put("avatarHealthPoints", sso.getAvatarHealthPoints());
 		object.put("avatarMaxHealthPoints", sso.getAvatarMaxHealthPoints());
@@ -116,7 +116,7 @@ public class Utils {
 
 		JSONArray availableActions = new JSONArray();
 		for (Types.ACTIONS action : sso.getAvailableActions())
-			availableActions.add(action);
+			availableActions.add(action.toString());
 		object.put("availableActions", availableActions);
 
 		JSONArray avatarResources = new JSONArray();
