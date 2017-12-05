@@ -1,79 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f30898c7-56be-45a6-ba7b-6fe74c667fac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/dictionaries/simon.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/random/Agent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/kkunan/Agent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/serialization/ArrayAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/ClientComm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/CompetitionParameters.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/ElapsedWallTimer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/IOPipe.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/JavaClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/DefaultDateTypeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/JsonStreamParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/annotations/Expose.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/annotations/SerializedName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LazilyParsedNumber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$AvlBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$AvlIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$EntrySet$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$EntrySet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$KeySet$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$KeySet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$LinkedTreeMapIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap$Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/LinkedHashTreeMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/Primitives.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/UnsafeAllocator$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/UnsafeAllocator$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/UnsafeAllocator$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/UnsafeAllocator$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/UnsafeAllocator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/ArrayTypeAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/ArrayTypeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/CollectionTypeAdapterFactory$Adapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/CollectionTypeAdapterFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/DateTypeAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/DateTypeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/JsonTreeReader$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/JsonTreeReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/JsonTreeWriter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/JsonTreeWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/SqlDateTypeAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/SqlDateTypeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/TimeTypeAdapter$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/TimeTypeAdapter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/utils/com/google/gson/internal/bind/util/ISO8601Utils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/res/data/level0-2.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/Agent.class" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/Agent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/constants/DeicticView.class" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/constants/DeicticView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/constants/Utils.class" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/group/datagather/constants/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/Test.class" afterPath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/custom/Tuple.class" afterPath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/custom/Tuple.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/custom/Utils.class" afterPath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/custom/Utils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/custom/sampleMCTS/Agent.class" afterPath="$PROJECT_DIR$/out/production/GVGAI_Project1/tracks/singlePlayer/custom/sampleMCTS/Agent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GVGAI_Project1.iml" afterPath="$PROJECT_DIR$/GVGAI_Project1.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/GVGAI-JavaClient.iml" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/GVGAI-JavaClient.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_1.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_2.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_3.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_4.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/raw/0_4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/logs/output_server_redirect_err.txt" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/logs/output_server_redirect_err.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_1.txt" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_2.txt" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_3.txt" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_4.txt" afterPath="$PROJECT_DIR$/out/production/GVGAI-JavaClient/res/data/raw/0_4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/Tuple.java" afterPath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/Tuple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/Utils.java" afterPath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/sampleMCTS/Agent.java" afterPath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/sampleMCTS/Agent.java" />
-    </list>
+    <list default="true" id="f30898c7-56be-45a6-ba7b-6fe74c667fac" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/Test.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -116,6 +44,11 @@
       </list>
     </option>
   </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1713" />
+    <option name="width" value="1734" />
+    <option name="height" value="1447" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -131,6 +64,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -172,8 +107,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -269,29 +202,30 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1713" y="0" width="1734" height="1447" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24970132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -310,14 +244,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/data/0_1.txt">
+    <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/JSONSaver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="27" column="52" lean-forward="false" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="40" lean-forward="false" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/data/0_1.txt" />
     <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/JSONSaver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">

@@ -88,7 +88,7 @@ public class Agent extends AbstractPlayer {
         Types.ACTIONS result = actions[action];
 
         // store new data and set new state of previous action
-        object.put("action", result);
+        object.put("action", result.toString());
         this.data.add(object);
         if (!this.firstMove) {
             this.data.get(this.data.size() - 1).put("newState", state);
