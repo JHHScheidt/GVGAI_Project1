@@ -1,10 +1,15 @@
 import json
 import numpy as np
 import os
-from keras.models import Sequential, Model, model_from_json
+from keras.models import model_from_json
 from pathlib import Path
 
+
 def readJsonData(location):
+    if not os.path.exists(location):
+        print("The datafile does not exist")
+        quit()
+
     jsonObject = json.load(open(location))
     keys = ["gameScore", "avatarHealthPoints", "avatarSpeed", "avatarOrientation", "avatarPosition", "observations"]
     observationKeys = ["sqDist", "category", "position"]
@@ -69,6 +74,7 @@ def readJsonData(location):
 
     return totalInput, totalOutput
 
+
 def loadModel(modelSpecs):
     MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))
     modelName = "model_"+modelSpecs+".json"
@@ -80,6 +86,7 @@ def loadModel(modelSpecs):
     else:
         print("The given model does not exist")
         quit()
+
 
 def loadModelWeights(modelSpecs, model):
     WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights"))

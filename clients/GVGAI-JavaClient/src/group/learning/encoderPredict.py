@@ -18,14 +18,11 @@ WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights")
 modelName = "model"+modelSpecs+".json"
 weightsName = "weights"+modelSpecs+".h5"
 
-batch_size = 1
-printPrediction = 1
-
 model = loadModel(modelSpecs)
 loadModelWeights(modelSpecs, model)
 
 if os.path.exists(DATAPATH) and predictionData != "":
-    predictions = model.predict(inputObject, batch_size=batch_size, verbose=printPrediction)
+    predictions = model.predict(inputObject, batch_size=1, verbose=1)
     for i in range(0, len(inputObject)):
         print("Actual input:")
         print(inputObject[i])

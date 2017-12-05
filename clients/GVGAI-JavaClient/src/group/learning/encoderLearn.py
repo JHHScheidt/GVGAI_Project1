@@ -20,7 +20,6 @@ DATAPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os
 # Define paths and data
 MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))
 WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights"))
-RESULTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "results"))
 
 # Define model representation
 dimensions = [
