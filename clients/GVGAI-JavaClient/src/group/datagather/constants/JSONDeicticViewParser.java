@@ -63,7 +63,7 @@ public class JSONDeicticViewParser implements Runnable {
 			result.add(subResult);
 		}
 
-		File outputFile = new File("clients/GVGAI-JavaClient/src/" + Constants.PREPROCESSED_OUTPUT_DIR + this.dataFile.getName());
+		File outputFile = new File("GVGAI_Project1/clients/GVGAI-JavaClient/src/" + Constants.PREPROCESSED_OUTPUT_DIR + this.dataFile.getName());
 		try {
 			outputFile.createNewFile();
 			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
@@ -116,6 +116,11 @@ public class JSONDeicticViewParser implements Runnable {
 		for (int i = 0; i < size; i++) {
 			JSONObject temp = (JSONObject) observations.get((int) observationDistances[i][0]);
 			temp.put("sqDist", observationDistances[i][1]);
+
+			JSONArray tempPosition = (JSONArray) temp.get("position");
+			tempPosition.set(0, Double.parseDouble(tempPosition.get(0).toString()) / blockSize / width);
+			tempPosition.set(1, Double.parseDouble(tempPosition.get(1).toString()) / blockSize / height);
+			temp.put("category", Integer.parseInt(temp.get("category").toString()) / Constants.CATEGORY_NORMALISATION_FACTOR);
 			temp.remove("itype");
 			temp.remove("reference");
 			temp.remove("obsId");
@@ -129,8 +134,9 @@ public class JSONDeicticViewParser implements Runnable {
 	public static void main(String[] args) throws IOException {
 		ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
-		File folder = new File("clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
+		File folder = new File("GVGAI_Project1/clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
 		File[] files = folder.listFiles();
+		System.out.println(folder.getAbsolutePath());
 		for (int i = 0; i < files.length; i++)
 			service.submit(new JSONDeicticViewParser(files[i]));
 
