@@ -24,18 +24,30 @@ WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights")
 # Define model representation
 dimensions = [
     len(inputObject[0]),
+    43,
     38,
+    33,
     28,
+    23,
     18,
+    13,
+    8,
+    3,
+    8,
+    13,
+    18,
+    23,
     28,
+    33,
     38,
+    43,
     len(outputObject[0])
 ]
-activations = ["sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid"]
+activations = ["sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid"]
 loss = "mean_squared_error"
 optimizer = "adam"
 
-modelRepresentation = ""
+modelRepresentation = "_"
 for i in range(0, len(dimensions)-1):
     modelRepresentation = modelRepresentation+str(dimensions[i])+activations[i][0]+"_"
 modelRepresentation = modelRepresentation+str(dimensions[len(dimensions)-1])+"_"+loss+"_"+optimizer

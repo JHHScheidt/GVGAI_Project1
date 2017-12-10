@@ -77,7 +77,7 @@ def readJsonData(location):
 
 def loadModel(modelSpecs):
     MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))
-    modelName = "model_"+modelSpecs+".json"
+    modelName = "model"+modelSpecs+".json"
     if Path(os.path.join(MODELPATH, modelName)).exists():
         json_file = open(os.path.join(MODELPATH, modelName), 'r')
         loaded_model_json = json_file.read()
@@ -90,7 +90,7 @@ def loadModel(modelSpecs):
 
 def loadModelWeights(modelSpecs, model):
     WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights"))
-    weightsName = "weights_"+modelSpecs+".h5"
+    weightsName = "weights"+modelSpecs+".h5"
     if Path(os.path.join(WEIGHTSPATH, weightsName)).exists():
         model.load_weights(os.path.join(WEIGHTSPATH, weightsName))
     else:
