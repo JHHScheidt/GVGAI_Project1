@@ -1,7 +1,7 @@
 import os
 import sys
 from pathlib import Path
-from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights
+from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights, readFolderData
 
 from keras.models import Sequential
 from keras.layers import Dense
@@ -15,7 +15,13 @@ epochs = int(sys.argv[2])
 
 # Receive input/output data
 DATAPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, "res", "data", "preprocessed", data))
-(inputObject, outputObject) = readJsonData(DATAPATH)
+
+if(DATAPATH[len(DATAPATH)-4:len(DATAPATH)] ==".txt"):
+    (inputObject, outputObject) = readJsonData(DATAPATH)
+elif Path(DATAPATH).exists():
+    (inputObject, outputObject) = readFolderData(DATAPATH)
+else:
+    print("The given data file is neither a text file nor an existing folder")
 
 # Define paths and data
 MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))
@@ -73,7 +79,7 @@ else:
 if Path(os.path.join(WEIGHTSPATH, "weights"+modelRepresentation+".h5")).exists():
     loadModelWeights(modelRepresentation, model)
 
-if os.path.exists(DATAPATH) and data != "":
+if os.path.exists(DATAPATH):
     model.compile(loss=loss, optimizer=optimizer, metrics=["accuracy"])
 
     model.fit(inputObject, outputObject, epochs=epochs, batch_size=1, verbose=1)

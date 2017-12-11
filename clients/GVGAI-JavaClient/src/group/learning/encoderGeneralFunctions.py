@@ -74,6 +74,19 @@ def readJsonData(location):
 
     return totalInput, totalOutput
 
+def readFolderData(location):
+    for file in os.listdir(location):
+        if file.endswith(".txt"):
+            (inputObject, outputObject) = readJsonData(os.path.abspath(os.path.join(location, file)))
+            if not "totalInput" in locals():
+                totalInput = inputObject
+                totalOutput = outputObject
+            else:
+                totalInput = np.concatenate((totalInput, inputObject))
+                totalOutput = np.concatenate((totalOutput, outputObject))
+
+    return totalInput, totalOutput
+
 
 def loadModel(modelSpecs):
     MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))

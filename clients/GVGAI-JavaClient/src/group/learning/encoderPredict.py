@@ -1,5 +1,6 @@
 import os
 import sys
+import math
 from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights
 
 # Arguments to be given:
@@ -28,5 +29,9 @@ if os.path.exists(DATAPATH) and predictionData != "":
         print(inputObject[i])
         print("Predicted output of next iteration:")
         print(predictions[i])
+        SSE = 0
+        for j in range(0, len(inputObject[i])-1):
+            SSE += math.pow((predictions[i][j]-inputObject[i][j]),2)
+        print("Squared sum of errors: "+str(SSE))
 else:
     print("The data from which predictions must be made does not exist")
