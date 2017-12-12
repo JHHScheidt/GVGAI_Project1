@@ -4,11 +4,9 @@ import core.game.Game;
 import core.game.StateObservation;
 import core.player.AbstractPlayer;
 import ontology.Types;
+import org.json.simple.JSONObject;
 import tools.ElapsedCpuTimer;
-import tracks.singlePlayer.custom.Constants;
-import tracks.singlePlayer.custom.DataSaver;
-import tracks.singlePlayer.custom.Tuple;
-import tracks.singlePlayer.custom.Utils;
+import tracks.singlePlayer.custom.*;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -27,7 +25,7 @@ import java.util.Random;
 public class Agent extends AbstractPlayer {
 
     private boolean firstMove;
-    private ArrayList<Tuple> data;
+    private ArrayList<JSONObject> data;
 
     public int num_actions;
     public Types.ACTIONS[] actions;
@@ -72,9 +70,10 @@ public class Agent extends AbstractPlayer {
      */
     public Types.ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
         // get the current state
-        String state = Utils.serializableStateObservationToString(stateObs);
 
-
+        JSONObject object = new JSONObject();
+        JSONObject state = Utils.stateObservationToJSON(stateObs);
+        object.put("state", state);
 
         //-------------------THE THING----------------
         //Set the state observation object as the new root of the tree.
@@ -89,15 +88,12 @@ public class Agent extends AbstractPlayer {
         Types.ACTIONS result = actions[action];
 
         // store new data and set new state of previous action
-        Tuple dataPoint = new Tuple(state, result, null);
+        object.put("action", result.toString());
+        this.data.add(object);
         if (!this.firstMove) {
-            this.data.get(this.data.size() - 1).setNewState(state);
+            this.data.get(this.data.size() - 1).put("newState", state);
         }
         this.firstMove = false;
-        this.data.add(dataPoint);
-
-
-
 
 
         //... and return it.
@@ -109,7 +105,7 @@ public class Agent extends AbstractPlayer {
      */
     @Override
     public void teardown(Game played) {
-        Thread thread = new Thread(new DataSaver(this.data));
+        Thread thread = new Thread(new JSONSaver(this.data));
         thread.start();
         this.data = new ArrayList<>();
 

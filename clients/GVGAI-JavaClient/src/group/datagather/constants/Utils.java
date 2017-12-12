@@ -1,50 +1,58 @@
 package group.datagather.constants;
 
-import serialization.Observation;
-		import serialization.SerializableStateObservation;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Stack;
 
 public class Utils {
 
-	public static String serializableStateObservationToString(SerializableStateObservation sso) {
-		Observation[][][] observationGrid = sso.getObservationGrid();
+	public static ArrayList<Object> readQSpace(File file) throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader(file));
+		String qSpaceString = reader.readLine();
 
-		String observation = "";
-		if (observationGrid != null) {
-			for (int i = 0; i < observationGrid.length; i++) {
-				for (int j = 0; j < observationGrid[i].length; j++) {
-					for (Observation obs : observationGrid[i][j]) {
-						observation += observationToString(obs) + "\n";
+		ArrayList<Object> result = null;
+		Stack<ArrayList<Object>> listStack = new Stack<>();
+
+		int start = 0;
+		boolean initial = false;
+		for (int i = 0; i < qSpaceString.length(); i++) {
+			if (qSpaceString.charAt(i) == '[') {
+				initial = true;
+				if (listStack.isEmpty()) {
+					result = new ArrayList<>();
+					listStack.push(result);
+				} else listStack.push(new ArrayList<>());
+			} else {
+				if (initial) {
+					start = i;
+					initial = false;
+				}
+				if (qSpaceString.charAt(i) == ']') {
+
+					if (qSpaceString.charAt(i - 1) != ']') {
+						String values = qSpaceString.substring(start, i);
+						start = i + 1;
+
+						String[] split = values.split(",");
+						for (String value : split) {
+							listStack.peek().add(Double.parseDouble(value));
+						}
 					}
+
+					ArrayList<Object> completedList = listStack.pop();
+					if (listStack.isEmpty()) listStack.peek().add(completedList);
 				}
 			}
 		}
 
-		return "{" + sso.gameScore +
-				";" + sso.gameTick +
-				";" + sso.gameWinner +
-				";" + sso.isGameOver +
-				";" + java.util.Arrays.toString(sso.worldDimension) +
-				";" + sso.blockSize +
-				";" + sso.avatarSpeed +
-				";" + java.util.Arrays.toString(sso.avatarOrientation) +
-				";" + java.util.Arrays.toString(sso.avatarPosition) +
-				";" + sso.avatarLastAction +
-				";" + sso.avatarType +
-				";" + sso.avatarHealthPoints +
-				";" + sso.avatarMaxHealthPoints +
-				";" + sso.avatarLimitHealthPoints +
-				";" + sso.isAvatarAlive +
-				";" + sso.availableActions +
-				";" + sso.avatarResources +
-				";\n" + observation + "}";
+		return result;
 	}
 
-	public static String observationToString(Observation observation) {
-		return "[" + observation.category + "," +
-				observation.itype + "," +
-				observation.obsID + "," +
-				observation.position + "," +
-				observation.reference + "," +
-				observation.sqDist + "]";
+	public static void main(String[] args) {
+		try {
+			readQSpace(null);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
