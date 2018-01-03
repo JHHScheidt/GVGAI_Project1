@@ -13,7 +13,7 @@ loadModelWeights(modelSpecs, model)
 
 # Define paths and data
 RESULTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "results"))
-resultsName = "weights_"+modelSpecs+".txt"
+resultsName = "weights"+modelSpecs+".txt"
 
 np.set_printoptions(precision=16, linewidth=1000)
 weightsFile = open(os.path.join(RESULTSPATH, resultsName), "w")
