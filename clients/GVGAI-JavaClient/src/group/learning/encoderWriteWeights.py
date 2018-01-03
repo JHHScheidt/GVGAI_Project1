@@ -1,6 +1,7 @@
 import numpy as np
 import os
 import sys
+import math
 from encoderGeneralFunctions import loadModel, loadModelWeights
 
 # Arguments to be given:
@@ -19,6 +20,7 @@ np.set_printoptions(precision=16, linewidth=1000)
 weightsFile = open(os.path.join(RESULTSPATH, resultsName), "w")
 for i in range(0, len(model.layers)):
     totalWeights = np.insert(model.layers[i].get_weights()[0], 0, model.layers[i].get_weights()[1], axis=0)
-    for j in range(0, len(totalWeights)):
-        weightsFile.write(str(totalWeights[j].tolist())+"\n")
-    weightsFile.write("\n")
+    if i <= math.ceil(len(totalWeights)/2):
+        for j in range(0, len(totalWeights)):
+            weightsFile.write(str(totalWeights[j].tolist())+"\n")
+        weightsFile.write("\n")
