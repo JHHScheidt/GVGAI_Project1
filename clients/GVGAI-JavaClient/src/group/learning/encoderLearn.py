@@ -1,6 +1,7 @@
 import os
 import sys
 from pathlib import Path
+import math
 from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights, readFolderData
 
 from keras.models import Sequential
@@ -66,6 +67,8 @@ else:
     for i in range(1, len(dimensions)):
         if i == 1:
             model.add(Dense(dimensions[i], input_dim=dimensions[0], activation=activations[i-1]))
+        if i == math.ceil(len(dimensions)/2):
+            model.add(Dense(dimensions[i], activation=activations[i-1], use_bias=False))
         else:
             model.add(Dense(dimensions[i], activation=activations[i-1]))
 
