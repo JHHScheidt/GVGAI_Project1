@@ -30,7 +30,7 @@ public class Tuple {
 	}
 
 	public String toString() {
-		if (this.newState != null) return "{" + this.state.toString() + "," + this.action.toString() + "," + this.newState.toString() + "}";
+		if (this.newState != null) return "{" + this.state + "," + this.action.toString() + "," + this.newState + "}";
 		else return "{" + this.state.toString() + "," + this.action.toString() + "}";
 	}
 }
