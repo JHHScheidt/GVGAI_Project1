@@ -134,7 +134,7 @@ public class JSONDeicticViewParser implements Runnable {
 	public static void main(String[] args) throws IOException {
 		ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
-		File folder = new File("GVGAI_Project1/clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
+		File folder = new File("clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
 		File[] files = folder.listFiles();
 		System.out.println(folder.getAbsolutePath());
 		for (int i = 0; i < files.length; i++)
