@@ -1,7 +1,8 @@
 import os
 import sys
 from pathlib import Path
-from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights
+import math
+from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights, readFolderData
 
 from keras.models import Sequential
 from keras.layers import Dense
@@ -15,7 +16,13 @@ epochs = int(sys.argv[2])
 
 # Receive input/output data
 DATAPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, "res", "data", "preprocessed", data))
-(inputObject, outputObject) = readJsonData(DATAPATH)
+
+if(DATAPATH[len(DATAPATH)-4:len(DATAPATH)] ==".txt"):
+    (inputObject, outputObject) = readJsonData(DATAPATH)
+elif Path(DATAPATH).exists():
+    (inputObject, outputObject) = readFolderData(DATAPATH)
+else:
+    print("The given data file is neither a text file nor an existing folder")
 
 # Define paths and data
 MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))
@@ -24,18 +31,30 @@ WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights")
 # Define model representation
 dimensions = [
     len(inputObject[0]),
+    43,
     38,
+    33,
     28,
+    23,
     18,
+    13,
+    8,
+    3,
+    8,
+    13,
+    18,
+    23,
     28,
+    33,
     38,
+    43,
     len(outputObject[0])
 ]
-activations = ["sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid"]
+activations = ["sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid"]
 loss = "mean_squared_error"
 optimizer = "adam"
 
-modelRepresentation = ""
+modelRepresentation = "_"
 for i in range(0, len(dimensions)-1):
     modelRepresentation = modelRepresentation+str(dimensions[i])+activations[i][0]+"_"
 modelRepresentation = modelRepresentation+str(dimensions[len(dimensions)-1])+"_"+loss+"_"+optimizer
@@ -48,6 +67,8 @@ else:
     for i in range(1, len(dimensions)):
         if i == 1:
             model.add(Dense(dimensions[i], input_dim=dimensions[0], activation=activations[i-1]))
+        if i == math.ceil(len(dimensions)/2):
+            model.add(Dense(dimensions[i], activation=activations[i-1], use_bias=False))
         else:
             model.add(Dense(dimensions[i], activation=activations[i-1]))
 
@@ -61,7 +82,7 @@ else:
 if Path(os.path.join(WEIGHTSPATH, "weights"+modelRepresentation+".h5")).exists():
     loadModelWeights(modelRepresentation, model)
 
-if os.path.exists(DATAPATH) and data != "":
+if os.path.exists(DATAPATH):
     model.compile(loss=loss, optimizer=optimizer, metrics=["accuracy"])
 
     model.fit(inputObject, outputObject, epochs=epochs, batch_size=1, verbose=1)
