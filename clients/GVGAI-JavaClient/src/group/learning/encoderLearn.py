@@ -1,11 +1,13 @@
 import os
 import sys
+import json
 from pathlib import Path
 import math
 from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights, readFolderData
 
 from keras.models import Sequential
 from keras.layers import Dense
+from keras.callbacks import History
 
 # Arguments to be given:
 # 1: the text file from which data is read
@@ -27,6 +29,7 @@ else:
 # Define paths and data
 MODELPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "model"))
 WEIGHTSPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "weights"))
+HISTORYPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "history"))
 
 # Define model representation
 dimensions = [
@@ -46,7 +49,7 @@ activations = ["sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid", "sigmoid",
 loss = "mean_squared_error"
 optimizer = "adam"
 
-modelRepresentation = "_"
+modelRepresentation = "_"+data+"_"
 for i in range(0, len(dimensions)-1):
     modelRepresentation = modelRepresentation+str(dimensions[i])+activations[i][0]+"_"
 modelRepresentation = modelRepresentation+str(dimensions[len(dimensions)-1])+"_"+loss+"_"+optimizer
@@ -75,10 +78,15 @@ if Path(os.path.join(WEIGHTSPATH, "weights"+modelRepresentation+".h5")).exists()
     loadModelWeights(modelRepresentation, model)
 
 if os.path.exists(DATAPATH):
+    history = History()
+
     model.compile(loss=loss, optimizer=optimizer, metrics=["accuracy"])
 
-    model.fit(inputObject, outputObject, epochs=epochs, batch_size=1, verbose=1)
+    model.fit(inputObject, outputObject, epochs=epochs, batch_size=1, verbose=1, callbacks=[history])
 
     model.save_weights(os.path.join(WEIGHTSPATH, "weights"+modelRepresentation+".h5"))
+
+    with open(os.path.join(HISTORYPATH, "history"+modelRepresentation+".json"), "w") as json_file:
+        json.dump(history.history, json_file)
 else:
     print("The given data does not exist in '\\res\\data\\preprocessed\\...'")
