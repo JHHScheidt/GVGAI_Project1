@@ -259,3 +259,4 @@ venv.bak/
 .mypy_cache/
 
 # End of https://www.gitignore.io/api/java,python,eclipse,netbeans,intellij
+clients/GVGAI-JavaClient/src/group/learning/weights/weights_48s_38s_28s_18s_8s_3s_8s_18s_28s_38s_47_mean_squared_error_adam.h5
