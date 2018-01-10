@@ -195,7 +195,7 @@ public abstract class Game {
 	protected boolean isEnded;
 
 	/**
-	 * State observation for this game.
+	 * Input observation for this game.
 	 */
 	protected ForwardModel fwdModel;
 

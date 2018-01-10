@@ -6,7 +6,6 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import java.io.*;
-import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -82,9 +81,9 @@ public class JSONDeicticViewParser implements Runnable {
 		double width = Double.parseDouble(((JSONArray) state.get("worldDimension")).get(0).toString()) / blockSize;
 		double height = Double.parseDouble(((JSONArray) state.get("worldDimension")).get(1).toString()) / blockSize;
 
-		result.put("gameScore", Double.parseDouble(state.get("gameScore").toString()) / Constants.NORMALISATION_FACTOR);
-		result.put("avatarSpeed", Double.parseDouble(state.get("avatarSpeed").toString()) / Constants.NORMALISATION_FACTOR);
-		result.put("avatarHealthPoints", Double.parseDouble(state.get("avatarHealthPoints").toString()) / Constants.NORMALISATION_FACTOR);
+		result.put("gameScore", Double.parseDouble(state.get("gameScore").toString()) / Constants.SCORE_NORMALISATION_FACTOR);
+		result.put("avatarSpeed", Double.parseDouble(state.get("avatarSpeed").toString()) / Constants.SCORE_NORMALISATION_FACTOR);
+		result.put("avatarHealthPoints", Double.parseDouble(state.get("avatarHealthPoints").toString()) / Constants.SCORE_NORMALISATION_FACTOR);
 		result.put("avatarOrientation", state.get("avatarOrientation"));
 
 		JSONArray position = (JSONArray) state.get("avatarPosition");
@@ -120,10 +119,23 @@ public class JSONDeicticViewParser implements Runnable {
 			JSONArray tempPosition = (JSONArray) temp.get("position");
 			tempPosition.set(0, Double.parseDouble(tempPosition.get(0).toString()) / blockSize / width);
 			tempPosition.set(1, Double.parseDouble(tempPosition.get(1).toString()) / blockSize / height);
-			temp.put("category", Integer.parseInt(temp.get("category").toString()) / Constants.CATEGORY_NORMALISATION_FACTOR);
+			temp.put("category", (Integer.parseInt(temp.get("category").toString()) + 1) / Constants.CATEGORY_NORMALISATION_FACTOR);
 			temp.remove("itype");
 			temp.remove("reference");
 			temp.remove("obsId");
+			selectedObservations.add(temp);
+		}
+		for (int i = size; i < Constants.DV; i++) {
+			JSONObject temp = new JSONObject();
+			temp.put("category", 0);
+			temp.put("sqDist", 0);
+
+			JSONArray tempPosition = new JSONArray();
+			tempPosition.add(0);
+			tempPosition.add(0);
+
+			temp.put("position", tempPosition);
+
 			selectedObservations.add(temp);
 		}
 		result.put("observations", selectedObservations);
@@ -134,9 +146,13 @@ public class JSONDeicticViewParser implements Runnable {
 	public static void main(String[] args) throws IOException {
 		ExecutorService service = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
-		File folder = new File("clients/GVGAI-JavaClient/src/" + Constants.RAW_OUTPUT_DIR);
+		File folder = new File(Constants.RAW_OUTPUT_DIR);
+		System.out.println("I'm looking for files here: " + folder.getAbsolutePath());
+		if (!folder.exists()) {
+			System.err.println("Cannot find the folder!");
+			return;
+		}
 		File[] files = folder.listFiles();
-		System.out.println(folder.getAbsolutePath());
 		for (int i = 0; i < files.length; i++)
 			service.submit(new JSONDeicticViewParser(files[i]));
 

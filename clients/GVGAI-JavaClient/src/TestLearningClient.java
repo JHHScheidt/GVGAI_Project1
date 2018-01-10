@@ -80,8 +80,6 @@ public class TestLearningClient
         }
         ElapsedWallTimer wallClock = new ElapsedWallTimer();
 
-        Constants.CURRENT_GAME_ID = gameId;
-
         //Available controllers:
         String scriptFile;
         String[] cmd;
