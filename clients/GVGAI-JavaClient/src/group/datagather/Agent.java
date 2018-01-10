@@ -30,7 +30,7 @@ public class Agent extends AbstractPlayer {
 											new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
 											new Layer(ENCODED_SIZE + 0, false));
 		try {
-			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "name.txt");
+			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "weights.txt");
 		} catch (IOException e) {
 			System.err.println("Loading the weights went wrong! quitting");
 			System.exit(0);
@@ -42,9 +42,9 @@ public class Agent extends AbstractPlayer {
 	@Override
 	public Types.ACTIONS act(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer) {
 		double[] networkInput = new double[INPUT_DIMENSION];
-		networkInput[0] = sso.getGameScore() / Constants.NORMALISATION_FACTOR;
-		networkInput[1] = sso.getAvatarSpeed() / Constants.NORMALISATION_FACTOR;
-		networkInput[2] = sso.getAvatarHealthPoints() / Constants.NORMALISATION_FACTOR;
+		networkInput[0] = sso.getGameScore() / Constants.SCORE_NORMALISATION_FACTOR;
+		networkInput[1] = sso.getAvatarSpeed() / Constants.SCORE_NORMALISATION_FACTOR;
+		networkInput[2] = sso.getAvatarHealthPoints() / Constants.SCORE_NORMALISATION_FACTOR;
 		networkInput[3] = sso.getAvatarOrientation()[0];
 		networkInput[4] = sso.getAvatarOrientation()[1];
 		networkInput[5] = sso.getAvatarPosition()[0] / sso.blockSize / sso.worldDimension[0];
@@ -82,7 +82,7 @@ public class Agent extends AbstractPlayer {
 			k = index & (1 << K_BITS) - 1;
 
 			observation = observations[i][j][k];
-			networkInput[7 + z * 4] = observation.category / Constants.NORMALISATION_FACTOR;
+			networkInput[7 + z * 4] = observation.category / Constants.SCORE_NORMALISATION_FACTOR;
 			networkInput[7 + z * 4 + 1] = observation.position.x / sso.blockSize / sso.worldDimension[0];
 			networkInput[7 + z * 4 + 2] = observation.position.y / sso.blockSize / sso.worldDimension[1];
 			networkInput[7 + z * 4 + 3] = observation.sqDist;

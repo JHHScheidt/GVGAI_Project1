@@ -71,7 +71,7 @@ public class NeuralNetwork {
 				neuronId = 0;
 			} else {
 				line = line.substring(1, line.length() - 1);
-				String[] split = line.split(",");
+				String[] split = line.split(", ");
 				Neuron neuron = this.layers[layerId].getNeurons()[neuronId];
 				double[] weights = new double[split.length];
 				for (int i = 0; i < split.length; i++) weights[i] = Double.parseDouble(split[i]);

@@ -40,9 +40,7 @@ public class Octree {
 		}
 
 		Node child = parent.getChild(subCubeId);
-		if (child.isLeafNode()) {
-			// q value update
-		} else {
+		if (child == null) {
 			// find value for new node
 			double average = 0;
 			int counter = 0;
@@ -60,6 +58,10 @@ public class Octree {
 			parent.setChild(subCubeId, newNode);
 
 			// q value update
+			newNode.addValue(value);
+		} else {
+			// q value update
+			child.addValue(value);
 		}
 	}
 
@@ -150,66 +152,10 @@ public class Octree {
 
 	private void print(Node node, int depth) {
 		if (node == null) return;
-		if (node.isLeafNode()) System.out.println(depth + " - " + node.getPoint());
+		if (node.isLeafNode()) System.out.println(depth + " - " + node.getPoint() + " value: " + node.getValue());
 
 		for (int i = 0; i < 8; i++) {
 			this.print(node.getChild(i), depth + 1);
 		}
 	}
-
-//	public static void main(String[] args) {
-//		Octree tree = new Octree();
-//
-//		ArrayList<Point> points = new ArrayList<>();
-//
-//		try {
-//			Scanner scanner = new Scanner(new File("res/1.txt"));
-//			while (scanner.hasNextLine()) {
-//				String line = scanner.nextLine();
-//				line = line.substring(1, line.length() - 1);
-//				String[] split = line.split(", ");
-//				double i = Double.parseDouble(split[0]);
-//				double j = Double.parseDouble(split[1]);
-//				double k = Double.parseDouble(split[2]);
-//				points.add(new Point(i, j, k));
-//			}
-//			scanner = new Scanner(new File("res/2.txt"));
-//			while (scanner.hasNextLine()) {
-//				String line = scanner.nextLine();
-//				line = line.substring(1, line.length() - 1);
-//				String[] split = line.split(", ");
-//				double i = Double.parseDouble(split[0]);
-//				double j = Double.parseDouble(split[1]);
-//				double k = Double.parseDouble(split[2]);
-//				points.add(new Point(i, j, k));
-//			}
-//			scanner = new Scanner(new File("res/4.txt"));
-//			while (scanner.hasNextLine()) {
-//				String line = scanner.nextLine();
-//				line = line.substring(1, line.length() - 1);
-//				String[] split = line.split(", ");
-//				double i = Double.parseDouble(split[0]);
-//				double j = Double.parseDouble(split[1]);
-//				double k = Double.parseDouble(split[2]);
-//				points.add(new Point(i, j, k));
-//			}
-//			scanner = new Scanner(new File("res/5.txt"));
-//			while (scanner.hasNextLine()) {
-//				String line = scanner.nextLine();
-//				line = line.substring(1, line.length() - 1);
-//				String[] split = line.split(", ");
-//				double i = Double.parseDouble(split[0]);
-//				double j = Double.parseDouble(split[1]);
-//				double k = Double.parseDouble(split[2]);
-//				points.add(new Point(i, j, k));
-//			}
-//		} catch (FileNotFoundException e) {
-//			e.printStackTrace();
-//		}
-//
-//		for (Point point : points)
-//			tree.addPoint(point);
-//
-//		tree.print();
-//	}
 }

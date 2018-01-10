@@ -114,7 +114,7 @@ public class LearningPlayer extends Player {
     }
 
     /***
-     * @param so           State observation of the current game in its initial state
+     * @param so           Input observation of the current game in its initial state
      * @param isValidation true if the level to play is a validation one.
      * @return true if Init worked.
      */

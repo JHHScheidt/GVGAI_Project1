@@ -12,6 +12,11 @@ import java.io.IOException;
  */
 public class Controller {
 
+	public static final int STATE_DATA_AMOUNT = 8; // data without observations
+	public static final int OBSERVATIONS = 10;
+	public static final int INPUT_DIMENSION = STATE_DATA_AMOUNT + 4 * OBSERVATIONS;
+	public static final int ENCODED_SIZE = 3;
+
 	private NeuralNetwork network;
 	private Learner learner;
 
@@ -23,19 +28,19 @@ public class Controller {
 	private void initNetwork() {
 		long start = System.nanoTime();
 
-		final int STATE_DATA_AMOUNT = 8; // data without observations
-		final int OBSERVATIONS = 10;
-		final int INPUT_DIMENSION = STATE_DATA_AMOUNT + 4 * OBSERVATIONS;
-		final int ENCODED_SIZE = 3;
-		final int OUTPUT_DIMENSION = STATE_DATA_AMOUNT + 4 * OBSERVATIONS - 1;
-
 		this.network = new NeuralNetwork(
 				new Layer(INPUT_DIMENSION + 1, true),
-				new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
-				new Layer(ENCODED_SIZE + 1, true),
-				new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
-				new Layer(OUTPUT_DIMENSION, false));
+				new Layer(INPUT_DIMENSION + 1 - 5, true),
+				new Layer(INPUT_DIMENSION + 1 - 10, true),
+				new Layer(INPUT_DIMENSION + 1 - 15, true),
+				new Layer(INPUT_DIMENSION + 1 - 20, true),
+				new Layer(INPUT_DIMENSION + 1 - 25, true),
+				new Layer(INPUT_DIMENSION + 1 - 30, true),
+				new Layer(INPUT_DIMENSION + 1 - 35, true),
+				new Layer(INPUT_DIMENSION + 1 - 40, true),
+				new Layer(ENCODED_SIZE, false));
 		this.network.init();
+
 		try {
 			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "weights.txt");
 		} catch (IOException e) {
@@ -49,12 +54,13 @@ public class Controller {
 		long start = System.nanoTime();
 
 		this.learner = new Learner();
-		this.learner.initSpace();
+		this.learner.initSpace(this.network);
 
 		System.out.println("initialising learner took " + (System.nanoTime() - start) + " nanoseconds");
 	}
 
 	public static void main(String[] args) {
 		Controller controller = new Controller();
+		controller.init();
 	}
 }

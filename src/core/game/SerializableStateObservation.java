@@ -26,7 +26,7 @@ public class SerializableStateObservation {
         START, INIT, ACT, ABORT, END
     }
 
-    // State Observation variables
+    // Input Observation variables
     public byte[] imageArray;
     public boolean isValidation;
     public float gameScore;
