@@ -2,8 +2,8 @@ package group.datagather;
 
 import group.datagather.constants.Constants;
 import group.datagather.constants.QuickSort;
-import group.datagather.neuralnet.Layer;
-import group.datagather.neuralnet.NeuralNetwork;
+import group.neuralnet.Layer;
+import group.neuralnet.NeuralNetwork;
 import serialization.Observation;
 import serialization.SerializableStateObservation;
 import serialization.Types;
@@ -11,7 +11,6 @@ import utils.AbstractPlayer;
 import utils.ElapsedCpuTimer;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class Agent extends AbstractPlayer {
 

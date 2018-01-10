@@ -58,7 +58,7 @@ final class TypeAdapterRuntimeTypeWrapper<T> extends TypeAdapter<T> {
         // The user registered a type adapter for the runtime type, so we will use that
         chosen = runtimeTypeAdapter;
       } else if (!(delegate instanceof ReflectiveTypeAdapterFactory.Adapter)) {
-        // The user registered a type adapter for Base class, so we prefer it over the
+        // The user registered a type adapter for Controller class, so we prefer it over the
         // reflective type adapter for the runtime type
         chosen = delegate;
       } else {
