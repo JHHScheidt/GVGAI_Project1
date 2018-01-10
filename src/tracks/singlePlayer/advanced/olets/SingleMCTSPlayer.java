@@ -24,7 +24,7 @@ public class SingleMCTSPlayer {
      */
     public static Random randomGenerator;
     /**
-     * State observation at the root of the tree.
+     * Input observation at the root of the tree.
      */
     private StateObservation rootObservation;
     /**

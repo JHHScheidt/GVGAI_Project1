@@ -10,7 +10,7 @@ public class Message {
     private String content;
 
     /**
-     * Base constructor for a Message. Needs a type (0 or 1) and a content
+     * Controller constructor for a Message. Needs a type (0 or 1) and a content
      * message
      *
      * @param type

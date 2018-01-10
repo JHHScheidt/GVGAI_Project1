@@ -51,7 +51,7 @@ public abstract class Comm extends Thread {
      * END_STATE: Game ends normally
      * ABORT_STATE: Game is violently ended by player using "ABORT" message or ACTION_ESCAPE key
      *
-     * @param so State observation of the game in progress to be used for message sending.
+     * @param so Input observation of the game in progress to be used for message sending.
      * @return response by the client (level to be played)
      */
     public int finishGame(StateObservation so){

@@ -213,7 +213,7 @@ public class JsonReader implements Closeable {
   private static final int PEEKED_NUMBER = 16;
   private static final int PEEKED_EOF = 17;
 
-  /* State machine when parsing numbers */
+  /* Input machine when parsing numbers */
   private static final int NUMBER_CHAR_NONE = 0;
   private static final int NUMBER_CHAR_SIGN = 1;
   private static final int NUMBER_CHAR_DIGIT = 2;
