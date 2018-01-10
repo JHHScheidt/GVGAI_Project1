@@ -63,7 +63,7 @@ public class JSONDeicticViewParser implements Runnable {
 			result.add(subResult);
 		}
 
-		File outputFile = new File("GVGAI_Project1/clients/GVGAI-JavaClient/src/" + Constants.PREPROCESSED_OUTPUT_DIR + this.dataFile.getName());
+		File outputFile = new File("clients/GVGAI-JavaClient/src/" + Constants.PREPROCESSED_OUTPUT_DIR + this.dataFile.getName());
 		try {
 			outputFile.createNewFile();
 			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
