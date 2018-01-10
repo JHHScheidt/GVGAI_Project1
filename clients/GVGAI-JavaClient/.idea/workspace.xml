@@ -14,8 +14,8 @@
       <file leaf-file-name="encoderLearn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/group/learning/encoderLearn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+            <state relative-caret-position="209">
+              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="y" value="8" />
     <option name="width" value="1400" />
@@ -128,7 +128,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="GVGAI-JavaClient" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/group/learning/encoderLearn.py" />
-      <option name="PARAMETERS" value="&quot;&quot; 10000" />
+      <option name="PARAMETERS" value="&quot;AliensRacing&quot; 10000" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -147,7 +147,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="8" width="1400" height="1000" extended-state="1" />
+    <frame x="4" y="8" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -324,8 +324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/group/learning/encoderLearn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="67" lean-forward="false" selection-start-line="65" selection-start-column="67" selection-end-line="65" selection-end-column="67" />
+        <state relative-caret-position="209">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

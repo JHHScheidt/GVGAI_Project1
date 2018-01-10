@@ -86,7 +86,11 @@ if os.path.exists(DATAPATH):
 
     model.save_weights(os.path.join(WEIGHTSPATH, "weights"+modelRepresentation+".h5"))
 
-    with open(os.path.join(HISTORYPATH, "history"+modelRepresentation+".json"), "w") as json_file:
-        json.dump(history.history, json_file)
+    if Path(os.path.join(HISTORYPATH, "history" + modelRepresentation + ".json")).exists():
+        with open(os.path.join(HISTORYPATH, "history" + modelRepresentation + ".json"), "a") as json_file:
+            json.dump(history.history, json_file)
+    else:
+        with open(os.path.join(HISTORYPATH, "history" + modelRepresentation + ".json"), "w") as json_file:
+            json.dump(history.history, json_file)
 else:
     print("The given data does not exist in '\\res\\data\\preprocessed\\...'")
