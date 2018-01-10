@@ -35,6 +35,7 @@ HISTORYPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "history")
 dimensions = [
     len(inputObject[0]),
     43,
+    43,
     38,
     33,
     28,
@@ -70,7 +71,7 @@ else:
     for i in range(1, len(dimensions)):
         if i == 1:
             model.add(Dense(dimensions[i], input_dim=dimensions[0], activation=activations[i-1]))
-        if i == math.ceil(len(dimensions)/2):
+        elif i == math.ceil(len(dimensions)/2):
             model.add(Dense(dimensions[i], activation=activations[i-1], use_bias=False))
         else:
             model.add(Dense(dimensions[i], activation=activations[i-1]))
@@ -94,7 +95,11 @@ if os.path.exists(DATAPATH):
 
     model.save_weights(os.path.join(WEIGHTSPATH, "weights"+modelRepresentation+".h5"))
 
-    with open(os.path.join(HISTORYPATH, "history"+modelRepresentation+".json"), "w") as json_file:
-        json.dump(history.history, json_file)
+    if Path(os.path.join(HISTORYPATH, "history"+modelRepresentation+".json")).exists():
+        with open(os.path.join(HISTORYPATH, "history" + modelRepresentation + ".json"), "a") as json_file:
+            json.dump(history.history, json_file)
+    else:
+        with open(os.path.join(HISTORYPATH, "history"+modelRepresentation+".json"), "w") as json_file:
+            json.dump(history.history, json_file)
 else:
     print("The given data does not exist in '\\res\\data\\preprocessed\\...'")

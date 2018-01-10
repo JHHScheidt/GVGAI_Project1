@@ -19,8 +19,12 @@ resultsName = "weights"+modelSpecs+".txt"
 np.set_printoptions(precision=16, linewidth=1000)
 weightsFile = open(os.path.join(RESULTSPATH, resultsName), "w")
 for i in range(0, len(model.layers)):
-    totalWeights = np.insert(model.layers[i].get_weights()[0], 0, model.layers[i].get_weights()[1], axis=0)
-    if i <= math.ceil(len(totalWeights)/2):
-        for j in range(0, len(totalWeights)):
-            weightsFile.write(str(totalWeights[j].tolist())+"\n")
-        weightsFile.write("\n")
+    if model.layers[i].use_bias:
+        totalWeights = np.insert(model.layers[i].get_weights()[0], 0, model.layers[i].get_weights()[1], axis=0)
+    else:
+        totalWeights = model.layers[i].get_weights()[0]
+    print(len(totalWeights))
+
+    for j in range(0, len(totalWeights)):
+        weightsFile.write(str(totalWeights[j].tolist())+"\n")
+    weightsFile.write("\n")

@@ -26,8 +26,8 @@ public class Test {
 		String sampleOLETSController = "tracks.singlePlayer.advanced.olets.Agent";
 
 //		String customController = "tracks.singlePlayer.custom.sampleMCTS.Agent";
-		String customController = "tracks.singlePlayer.custom.olets.Agent";
-//		String customController = "tracks.singlePlayer.custom.MaastCTS2.Agent";
+//		String customController = "tracks.singlePlayer.custom.olets.Agent";
+		String customController = "tracks.singlePlayer.custom.MaastCTS2.Agent";
 
 		//Load available games
 		String spGamesCollection =  "examples/all_games_sp.csv";
@@ -75,7 +75,7 @@ public class Test {
 		boolean saveActions = false;
 		String[] levels = new String[L];
 		String[] actionFiles = new String[L*M];
-		for(int i = 0; i < N; ++i)
+		for(int i = 111; i < N; ++i)
 		{
 			int actionIdx = 0;
 			game = games[i][0];
