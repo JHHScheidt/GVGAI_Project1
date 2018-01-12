@@ -13,6 +13,17 @@ public class Node {
 		this.value = Math.random() * 0.1 - 0.05;
 	}
 
+	/**
+	 * Supposed to be only used for reading in the tree
+	 */
+	public Node() {
+		this.leafNode = true;
+	}
+
+	public void setPoint(Point point) {
+		this.point = point;
+	}
+
 	public Node getChild(int id) {
 		if (this.children == null) return null;
 		else return this.children[id];

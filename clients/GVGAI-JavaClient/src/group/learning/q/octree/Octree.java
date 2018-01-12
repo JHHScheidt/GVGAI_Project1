@@ -1,10 +1,12 @@
 package group.learning.q.octree;
 
 import group.datagather.constants.Constants;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -203,9 +205,76 @@ public class Octree {
 		File outputFile = new File(Constants.QPSACE_OUTPUT_DIR + "space.json");
 
 		JSONObject tree = new JSONObject();
+		tree.put("root", this.saveNode(this.root));
 
-		JSONObject root = new JSONObject();
-//		tree.put("root", )
+		try {
+			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
+			writer.println(tree.toJSONString());
+			writer.flush();
+			writer.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
+	public void load() {
+		File file = new File(Constants.QPSACE_OUTPUT_DIR + "space.json");
+
+		JSONObject object = null;
+		try {
+			object = (JSONObject) new JSONParser().parse(new FileReader(file));
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		JSONObject root = (JSONObject) object.get("root");
+		this.root = this.readNode(root);
+	}
+
+	private Node readNode(JSONObject nodeJSON) {
+		Node node = new Node();
+
+		boolean isLeafNode = Boolean.parseBoolean(nodeJSON.get("isLeafNode").toString());
+		if (isLeafNode) {
+			node.setPoint(this.pointFromJSON((JSONObject) nodeJSON.get("point")));
+			node.setValue(Double.parseDouble(nodeJSON.get("value").toString()));
+		} else {
+			for (int i = 0; i < 8; i++) {
+				Object object =  nodeJSON.get(String.valueOf(i));
+				if (object != null) node.setChild(i, this.readNode((JSONObject) object));
+			}
+		}
+
+		return node;
+	}
+
+	private JSONObject saveNode(Node node) {
+		JSONObject nodeJSON = new JSONObject();
+
+		nodeJSON.put("isLeafNode", node.isLeafNode());
+		if (node.isLeafNode()) {
+			nodeJSON.put("point", this.pointToJSON(node.getPoint()));
+			nodeJSON.put("value", node.getValue());
+		}
+
+		for (int i = 0; i < 8; i++) {
+			Node child = node.getChild(i);
+			if (child == null) nodeJSON.put(String.valueOf(i), null);
+			else nodeJSON.put(String.valueOf(i), this.saveNode(child));
+		}
+
+		return nodeJSON;
+	}
+
+	private JSONObject pointToJSON(Point point) {
+		JSONObject pointJSON = new JSONObject();
+		pointJSON.put("i", point.getI());
+		pointJSON.put("j", point.getJ());
+		pointJSON.put("k", point.getK());
+		return pointJSON;
+	}
+
+	private Point pointFromJSON(JSONObject object) {
+		return new Point(Double.parseDouble(object.get("i").toString()), Double.parseDouble(object.get("j").toString()), Double.parseDouble(object.get("k").toString()));
+	}
 }

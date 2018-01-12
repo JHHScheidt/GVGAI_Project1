@@ -50,7 +50,9 @@ public class Controller {
 		long start = System.nanoTime();
 
 		this.learner = new Learner();
-		this.learner.initSpace(this.network);
+		this.learner.loadSpace();
+
+//		this.learner.initSpace(this.network);
 
 		System.out.println("initialising learner took " + (System.nanoTime() - start) + " nanoseconds");
 	}

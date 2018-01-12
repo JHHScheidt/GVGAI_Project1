@@ -35,7 +35,7 @@ public class Layer {
 				sum += this.neurons[j].getWeights()[i] * this.neurons[j].getActivation();
 			}
 			
-			nextNeurons[i].setActivation(NeuralNetwork.relu(sum));
+			nextNeurons[i].setActivation(NeuralNetwork.sigmoid(sum));
 		}
 	}
 	

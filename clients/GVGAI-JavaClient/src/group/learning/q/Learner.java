@@ -143,4 +143,12 @@ public class Learner {
 
 		return input;
 	}
+
+	public void saveSpace() {
+		this.space.save();
+	}
+
+	public void loadSpace() {
+		this.space.load();
+	}
 }
