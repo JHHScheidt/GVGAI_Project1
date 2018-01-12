@@ -1,5 +1,8 @@
 package group.learning.q.octree;
 
+import group.datagather.constants.Constants;
+import org.json.simple.JSONObject;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -29,14 +32,12 @@ public class Octree {
 	public void addData(Point point, double value) {
 		Node parent = this.root;
 		double[] bounds = Arrays.copyOf(this.rootBounds, this.rootBounds.length);
-		int depth = 0;
 
 		int subCubeId = this.findSubCubeId(bounds, point);
 		while (parent.getChild(subCubeId) != null && !parent.getChild(subCubeId).isLeafNode()) {
 			parent = parent.getChild(subCubeId);
 			subCubeId = this.findSubCubeId(bounds, point);
 			this.updateBounds(bounds, subCubeId);
-			depth++;
 		}
 
 		Node child = parent.getChild(subCubeId);
@@ -62,6 +63,43 @@ public class Octree {
 		} else {
 			// q value update
 			child.addValue(value);
+		}
+	}
+
+	public double findValue(Point point) {
+		Node parent = this.root;
+		double[] bounds = Arrays.copyOf(this.rootBounds, this.rootBounds.length);
+
+		int subCubeId = this.findSubCubeId(bounds, point);
+		while (parent.getChild(subCubeId) != null && !parent.getChild(subCubeId).isLeafNode()) {
+			parent = parent.getChild(subCubeId);
+			subCubeId = this.findSubCubeId(bounds, point);
+			this.updateBounds(bounds, subCubeId);
+		}
+
+		Node child = parent.getChild(subCubeId);
+		if (child == null) {
+			// find value for new node
+			double average = 0;
+			int counter = 0;
+			for (int i = 0; i < 8; i++) {
+				Node node = parent.getChild(i);
+				if (node != null) {
+					counter++;
+					average += node.getValue();
+				}
+			}
+			average /= counter;
+
+			Node newNode = new Node(point);
+			newNode.addValue(average);
+			parent.setChild(subCubeId, newNode);
+
+			// q value update
+			return newNode.getValue();
+		} else {
+			// q value update
+			return child.getValue();
 		}
 	}
 
@@ -158,4 +196,16 @@ public class Octree {
 			this.print(node.getChild(i), depth + 1);
 		}
 	}
+
+	public void save() {
+		File folder = new File(Constants.QPSACE_OUTPUT_DIR);
+		if (!folder.exists()) folder.mkdirs();
+		File outputFile = new File(Constants.QPSACE_OUTPUT_DIR + "space.json");
+
+		JSONObject tree = new JSONObject();
+
+		JSONObject root = new JSONObject();
+//		tree.put("root", )
+	}
+
 }

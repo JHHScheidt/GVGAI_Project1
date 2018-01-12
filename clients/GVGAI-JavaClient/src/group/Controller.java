@@ -30,13 +30,9 @@ public class Controller {
 
 		this.network = new NeuralNetwork(
 				new Layer(INPUT_DIMENSION + 1, true),
-				new Layer(INPUT_DIMENSION + 1 - 5, true),
 				new Layer(INPUT_DIMENSION + 1 - 10, true),
-				new Layer(INPUT_DIMENSION + 1 - 15, true),
 				new Layer(INPUT_DIMENSION + 1 - 20, true),
-				new Layer(INPUT_DIMENSION + 1 - 25, true),
 				new Layer(INPUT_DIMENSION + 1 - 30, true),
-				new Layer(INPUT_DIMENSION + 1 - 35, true),
 				new Layer(INPUT_DIMENSION + 1 - 40, true),
 				new Layer(ENCODED_SIZE, false));
 		this.network.init();
