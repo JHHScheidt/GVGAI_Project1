@@ -19,7 +19,7 @@ public class DataSaver implements Runnable {
 		File path = new File(Constants.OUTPUT_DIR);
 		if (!path.exists()) path.mkdirs();
 
-		File outputFile = new File(Constants.OUTPUT_DIR + Constants.CURRENT_GAME_ID + "_" + Constants.CURRENT_LEVEL_ID + ".txt");
+		File outputFile = new File(Constants.OUTPUT_DIR + Constants.CURRENT_GAME_ITER + "-"+Constants.CURRENT_GAME_ID +"_" + Constants.CURRENT_LEVEL_ID + ".txt");
 		try {
 			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
 			for (Tuple tuple : this.data)

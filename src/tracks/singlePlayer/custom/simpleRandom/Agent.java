@@ -32,6 +32,7 @@ public class Agent extends AbstractPlayer {
      */
     protected ArrayList<Types.ACTIONS> actions;
 
+    private int AgentId = 0;
 
     /**
      * Public constructor with state observation and time due.
@@ -44,6 +45,7 @@ public class Agent extends AbstractPlayer {
         actions = so.getAvailableActions();
         this.data = new ArrayList<>();
         this.firstMove = true;
+        Constants.AGENT_ID = AgentId;
     }
 
 
@@ -80,7 +82,12 @@ public class Agent extends AbstractPlayer {
         this.data = new ArrayList<>();
 
         Constants.CURRENT_LEVEL_ID++;
-        if (Constants.CURRENT_LEVEL_ID == 5) {
+        if(Constants.CURRENT_GAME_ITER<50 && Constants.CURRENT_LEVEL_ID == 5) {
+            Constants.CURRENT_GAME_ITER++;
+            Constants.CURRENT_LEVEL_ID = 0;
+            System.out.println(Constants.CURRENT_GAME_ITER);
+        }
+        else if(Constants.CURRENT_GAME_ITER == 50 && Constants.CURRENT_LEVEL_ID == 5) {
             while (thread.isAlive()){
                 try {
                     Thread.sleep(500);
@@ -90,6 +97,17 @@ public class Agent extends AbstractPlayer {
             }
             System.exit(0);
         }
+
+//        if (Constants.CURRENT_LEVEL_ID == 5) {
+//            while (thread.isAlive()){
+//                try {
+//                    Thread.sleep(500);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//            System.exit(0);
+//        }
 
         super.teardown(played);
     }

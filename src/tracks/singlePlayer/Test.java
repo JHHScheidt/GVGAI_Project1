@@ -5,6 +5,7 @@ import java.util.Random;
 import core.logging.Logger;
 import tools.Utils;
 import tracks.ArcadeMachine;
+import tracks.singlePlayer.custom.Constants;
 
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 04/10/13 Time: 16:29 This is a
@@ -76,7 +77,8 @@ public class Test {
 		boolean saveActions = false;
 		String[] levels = new String[L];
 		String[] actionFiles = new String[L*M];
-		for(int i = 101; i < N; ++i)
+
+		for(int i = Constants.CURRENT_GAME_ID; i < N;)
 		{
 			int actionIdx = 0;
 			game = games[i][0];

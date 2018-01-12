@@ -22,7 +22,7 @@ public class JSONSaver implements Runnable {
 		File path = new File(Constants.OUTPUT_DIR);
 		if (!path.exists()) path.mkdirs();
 
-		File outputFile = new File(Constants.OUTPUT_DIR + Constants.CURRENT_GAME_ID + "_" + Constants.CURRENT_LEVEL_ID + ".txt");
+		File outputFile = new File(Constants.OUTPUT_DIR + Constants.CURRENT_GAME_ID +"_" + Constants.CURRENT_LEVEL_ID + "(A"+Constants.AGENT_ID+"-P"+ Constants.CURRENT_GAME_ITER + ")"+ ".txt");
 		try {
 			PrintWriter writer = new PrintWriter(new FileOutputStream(outputFile));
 			JSONArray finalObject = new JSONArray();

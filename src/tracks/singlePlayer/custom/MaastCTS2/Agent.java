@@ -28,6 +28,7 @@ public class Agent extends AbstractPlayer {
 	public static IController controller;
 	private boolean firstMove;
 	private ArrayList<JSONObject> data;
+	private int AgentId = 1;
 
 	/**
 	 * constructor for competition
@@ -43,6 +44,7 @@ public class Agent extends AbstractPlayer {
 
 		this.data = new ArrayList<>();
 		this.firstMove = true;
+		Constants.AGENT_ID = AgentId;
 	}
 
 	public Agent(StateObservation so, ElapsedCpuTimer elapsedTimer,
@@ -58,6 +60,7 @@ public class Agent extends AbstractPlayer {
 
 		this.data = new ArrayList<>();
 		this.firstMove = true;
+		Constants.AGENT_ID = AgentId;
 	}
 	
 	public Agent(StateObservation so, ElapsedCpuTimer elapsedTimer, IController controller){
@@ -66,6 +69,7 @@ public class Agent extends AbstractPlayer {
 
 		this.data = new ArrayList<>();
 		this.firstMove = true;
+		Constants.AGENT_ID = AgentId;
 	}
 
 	@Override
@@ -113,7 +117,12 @@ public class Agent extends AbstractPlayer {
 		this.data = new ArrayList<>();
 
 		Constants.CURRENT_LEVEL_ID++;
-		if (Constants.CURRENT_LEVEL_ID == 5) {
+		if(Constants.CURRENT_GAME_ITER<50 && Constants.CURRENT_LEVEL_ID == 5) {
+			Constants.CURRENT_GAME_ITER++;
+			Constants.CURRENT_LEVEL_ID = 0;
+			System.out.println(Constants.CURRENT_GAME_ITER);
+		}
+		else if(Constants.CURRENT_GAME_ITER == 50 && Constants.CURRENT_LEVEL_ID == 5) {
 			while (thread.isAlive()){
 				try {
 					Thread.sleep(500);
