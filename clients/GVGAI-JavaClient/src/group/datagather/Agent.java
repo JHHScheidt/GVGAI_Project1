@@ -2,6 +2,7 @@ package group.datagather;
 
 import group.datagather.constants.Constants;
 import group.datagather.constants.QuickSort;
+import group.learning.q.Learner;
 import group.neuralnet.Layer;
 import group.neuralnet.NeuralNetwork;
 import serialization.Observation;
@@ -23,6 +24,7 @@ public class Agent extends AbstractPlayer {
 
 	private NeuralNetwork network;
 	private QuickSort quickSort;
+	private Learner learner;
 	
 	@Override
 	public void init(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer) {
@@ -35,6 +37,9 @@ public class Agent extends AbstractPlayer {
 			System.err.println("Loading the weights went wrong! quitting");
 			System.exit(0);
 		}
+
+		this.learner = new Learner();
+		this.learner.loadSpace();
 
 		this.quickSort = new QuickSort();
 	}
@@ -59,7 +64,6 @@ public class Agent extends AbstractPlayer {
 		int currentId = 0;
 
 
-		System.out.println("reached here 2");
 		Observation[][][] observations = sso.getObservationGrid();
 		int index;
 		for (int i = 0; i < observations.length; i++) {
@@ -88,24 +92,22 @@ public class Agent extends AbstractPlayer {
 			networkInput[7 + z * 4 + 3] = observation.sqDist;
 		}
 
-		// double bestQValue = -1000
-		// Types.ACTIONS bestAction = Types.ACTIONS.NIL;
+		double bestQValue = -Double.MIN_VALUE;
+		Types.ACTIONS bestAction = Types.ACTIONS.ACTION_NIL;
 		for (Types.ACTIONS action : sso.getAvailableActions()) {
 			networkInput[networkInput.length - 1] = action.ordinal() / Constants.AVAILABLE_ACTIONS;
 
 			double[] output = this.network.compute(networkInput);
-			// double qValue = QLearner.qLearn(output);
-			// if (qValue > bestQValue) {
-			// bestQValue = qValue;
-			// bestAction = action;
-			//}
+			 double qValue = this.learner.findValue(output);
+			 if (qValue > bestQValue) {
+			 bestQValue = qValue;
+			 bestAction = action;
+			}
 		}
-
 
 		System.out.println(elapsedTimer.elapsed());
 
-		// return bestAction;
-		return null;
+		return bestAction;
 	}
 
 	@Override

@@ -31,8 +31,8 @@ public class TestLearningClient
         } else {
             serverDir = "../..";
         }
-        String agentName = "group.datagather.Agent";         //Agent to play with
-        boolean visuals = false;
+        String agentName = "DontUnderestimateUchiha.Agent";         //Agent to play with
+        boolean visuals = true;
         /** Get arguments */
         Map<String, List<String>> params = new HashMap<>();
         List<String> options = null;
@@ -92,7 +92,7 @@ public class TestLearningClient
             if (visuals) {
                 cmd = new String[]{scriptFile, gameId + "", serverDir, "true"};
             } else {
-                cmd = new String[]{scriptFile, gameId + "", serverDir, "false"};
+                cmd = new String[]{scriptFile, gameId + "", serverDir, "true"};
             }
         } else {
             scriptFile = shDir + "/runServer_compile.sh";

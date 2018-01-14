@@ -151,4 +151,8 @@ public class Learner {
 	public void loadSpace() {
 		this.space.load();
 	}
+
+	public double findValue(double[] point) {
+		return this.space.findValue(point);
+	}
 }

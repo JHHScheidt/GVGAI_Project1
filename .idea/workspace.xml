@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6820ea8-732a-4245-884a-d69b5a4df998" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tracks/singlePlayer/custom/DataSaver.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/Controller.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GVGAI_Project1.iml" afterPath="$PROJECT_DIR$/GVGAI_Project1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/TestLearningClient.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/TestLearningClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/Agent.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/Agent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Node.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Node.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/neuralnet/Layer.java" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/neuralnet/Layer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/network/weights.txt" afterPath="$PROJECT_DIR$/res/network/weights.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect_err.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/logs/output_server_redirect_err.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/sources.txt" afterPath="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/sources.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../ACML/target/" />
@@ -37,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -50,23 +51,35 @@
       <file leaf-file-name="Learner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="151" column="26" lean-forward="true" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
+            <state relative-caret-position="333">
+              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding>
                 <element signature="e#5449#5450#0" expanded="true" />
                 <element signature="e#5473#5474#0" expanded="true" />
                 <element signature="e#5501#5502#0" expanded="true" />
                 <element signature="e#5525#5526#0" expanded="true" />
+                <element signature="e#5569#5570#0" expanded="true" />
+                <element signature="e#5610#5611#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONSaver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tracks/singlePlayer/custom/JSONSaver.java">
+      <file leaf-file-name="Agent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/Agent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="49" lean-forward="false" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+            <state relative-caret-position="187">
+              <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestLearningClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/TestLearningClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -75,9 +88,10 @@
       <file leaf-file-name="JSONDeicticViewParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/JSONDeicticViewParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="81" />
+            <state relative-caret-position="0">
+              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <marker date="1515749771845" expanded="true" signature="6002:6127" ph="{...}" />
               </folding>
             </state>
@@ -87,18 +101,8 @@
       <file leaf-file-name="Octree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="253" column="54" lean-forward="true" selection-start-line="253" selection-start-column="54" selection-end-line="253" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Point.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="290">
+              <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/neuralnet/Layer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
-              <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+              <caret line="37" column="58" lean-forward="false" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -138,6 +142,7 @@
       <find>KnowledgeBase</find>
       <find>type</find>
       <find>json_file</find>
+      <find>visuals</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,9 +176,11 @@
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Point.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/neuralnet/Layer.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Node.java" />
-        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java" />
-        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java" />
         <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/Controller.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/Agent.java" />
+        <option value="$PROJECT_DIR$/clients/GVGAI-JavaClient/src/TestLearningClient.java" />
       </list>
     </option>
   </component>
@@ -190,7 +197,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1087" />
   </component>
@@ -235,6 +242,14 @@
               <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="GVGAI-JavaClient" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GVGAI_Project1" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="GVGAI-JavaClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="DontUnderestimateUchiha" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
@@ -290,27 +305,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="group" type="462c0819:PsiDirectoryNode" />
               <item name="neuralnet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVGAI_Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="GVGAI-PythonClient" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVGAI_Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="GVGAI-PythonClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GVGAI_Project1" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="GVGAI-PythonClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ercumentilhan" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GVGAI_Project1" type="b2602c69:ProjectViewProjectNode" />
@@ -423,7 +417,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Controller">
+  <component name="RunManager" selected="Application.TestLearningClient">
     <configuration name="Controller" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="group.Controller" />
@@ -460,6 +454,20 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="tracks.singlePlayer.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="GVGAI_Project1" />
+      <envs />
+    </configuration>
+    <configuration name="TestLearningClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestLearningClient" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -618,15 +626,17 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.JSONDeicticViewParser" />
       <item index="1" class="java.lang.String" itemvalue="Application.Test" />
       <item index="2" class="java.lang.String" itemvalue="Application.Utils" />
       <item index="3" class="java.lang.String" itemvalue="Application.Controller" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestLearningClient" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Controller" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestLearningClient" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Controller" />
       </list>
     </recent_temporary>
   </component>
@@ -651,6 +661,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32756868" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -661,11 +672,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30677083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1921875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32858595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2533062" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -692,12 +703,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/res/data/preprocessed/0_1.txt" />
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/serialization/Observation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -857,14 +867,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/Agent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -900,7 +902,7 @@
     <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/neuralnet/Layer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
-          <caret line="37" column="58" lean-forward="true" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
+          <caret line="37" column="58" lean-forward="false" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -911,16 +913,6 @@
           <caret line="114" column="28" lean-forward="false" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/JSONDeicticViewParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="81" />
-          <folding>
-            <marker date="1515749771845" expanded="true" signature="6002:6127" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -938,27 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="253" column="54" lean-forward="true" selection-start-line="253" selection-start-column="54" selection-end-line="253" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="151" column="26" lean-forward="true" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
-          <folding>
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5473#5474#0" expanded="true" />
-            <element signature="e#5501#5502#0" expanded="true" />
-            <element signature="e#5525#5526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/q/space.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5831">
@@ -971,6 +942,56 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/Learner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
+          <folding>
+            <element signature="e#5449#5450#0" expanded="true" />
+            <element signature="e#5473#5474#0" expanded="true" />
+            <element signature="e#5501#5502#0" expanded="true" />
+            <element signature="e#5525#5526#0" expanded="true" />
+            <element signature="e#5569#5570#0" expanded="true" />
+            <element signature="e#5610#5611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/learning/q/octree/Octree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/Agent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/group/datagather/constants/JSONDeicticViewParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1515749771845" expanded="true" signature="6002:6127" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clients/GVGAI-JavaClient/src/TestLearningClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding />
         </state>
       </provider>

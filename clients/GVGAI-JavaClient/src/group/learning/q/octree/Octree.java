@@ -68,6 +68,10 @@ public class Octree {
 		}
 	}
 
+	public double findValue(double[] pointArray) {
+		return this.findValue(new Point(pointArray[0], pointArray[1], pointArray[2]));
+	}
+
 	public double findValue(Point point) {
 		Node parent = this.root;
 		double[] bounds = Arrays.copyOf(this.rootBounds, this.rootBounds.length);
