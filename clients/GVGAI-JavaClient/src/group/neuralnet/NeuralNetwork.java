@@ -30,6 +30,7 @@ public class NeuralNetwork {
 		double[] result = new double[this.layers[this.layers.length - 1].getNeurons().length];
 		for (int i = 0; i < this.layers[this.layers.length - 1].getNeurons().length; i++)
 			result[i] = this.layers[this.layers.length - 1].getNeurons()[i].getActivation();
+
 		return result;
 	}
 	
@@ -37,7 +38,6 @@ public class NeuralNetwork {
 		// set the input activation of the first layer
 		Neuron[] neurons = this.layers[0].getNeuronsWithoutBias();
 		for (int i = 0; i < neurons.length; i++) neurons[i].setActivation(inputActivation[i]);
-		
 		for (int i = 0; i < this.layers.length - 1; i++)
 			this.layers[i].feedForward();
 	}

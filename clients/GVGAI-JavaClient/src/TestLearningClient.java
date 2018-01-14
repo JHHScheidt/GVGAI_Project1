@@ -31,7 +31,7 @@ public class TestLearningClient
         } else {
             serverDir = "../..";
         }
-        String agentName = "DontUnderestimateUchiha.Agent";         //Agent to play with
+        String agentName = "group.datagather.Agent";         //Agent to play with
         boolean visuals = true;
         /** Get arguments */
         Map<String, List<String>> params = new HashMap<>();

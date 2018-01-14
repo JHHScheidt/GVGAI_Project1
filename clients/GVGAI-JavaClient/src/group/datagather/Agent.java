@@ -12,6 +12,7 @@ import utils.AbstractPlayer;
 import utils.ElapsedCpuTimer;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Agent extends AbstractPlayer {
 
@@ -29,8 +30,13 @@ public class Agent extends AbstractPlayer {
 	@Override
 	public void init(SerializableStateObservation sso, ElapsedCpuTimer elapsedTimer) {
 		this.network = new NeuralNetwork(	new Layer(INPUT_DIMENSION + 1, true),
-											new Layer(STATE_DATA_AMOUNT + OBSERVATIONS + 1, true),
+											new Layer(INPUT_DIMENSION + 1 - 10, true),
+											new Layer(INPUT_DIMENSION + 1 - 20, true),
+											new Layer(INPUT_DIMENSION + 1 - 30, true),
+											new Layer(INPUT_DIMENSION + 1 - 40, true),
 											new Layer(ENCODED_SIZE + 0, false));
+		this.network.init();
+
 		try {
 			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "weights.txt");
 		} catch (IOException e) {
@@ -62,7 +68,6 @@ public class Agent extends AbstractPlayer {
 
 		double[][] distances = new double[size][2];
 		int currentId = 0;
-
 
 		Observation[][][] observations = sso.getObservationGrid();
 		int index;
@@ -96,12 +101,11 @@ public class Agent extends AbstractPlayer {
 		Types.ACTIONS bestAction = Types.ACTIONS.ACTION_NIL;
 		for (Types.ACTIONS action : sso.getAvailableActions()) {
 			networkInput[networkInput.length - 1] = action.ordinal() / Constants.AVAILABLE_ACTIONS;
-
 			double[] output = this.network.compute(networkInput);
-			 double qValue = this.learner.findValue(output);
-			 if (qValue > bestQValue) {
-			 bestQValue = qValue;
-			 bestAction = action;
+			double qValue = this.learner.findValue(output);
+			if (qValue > bestQValue) {
+				bestQValue = qValue;
+				bestAction = action;
 			}
 		}
 
