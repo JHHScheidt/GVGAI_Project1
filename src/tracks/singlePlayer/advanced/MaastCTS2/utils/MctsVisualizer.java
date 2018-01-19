@@ -26,10 +26,10 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2.Agent;
-import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2.Globals;
-import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2.controller.MctsController;
-import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2.model.MctNode;
+import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2Method1.Agent;
+import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2Method1.Globals;
+import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2Method1.controller.MctsController;
+import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2Method1.model.MctNode;
 
 public class MctsVisualizer {
 	

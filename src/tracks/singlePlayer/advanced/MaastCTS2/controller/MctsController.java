@@ -15,7 +15,7 @@ import tracks.singlePlayer.advanced.MaastCTS2.model.StateObs;
 import tracks.singlePlayer.advanced.MaastCTS2.move_selection.IMoveSelectionStrategy;
 import tracks.singlePlayer.advanced.MaastCTS2.playout.IPlayoutStrategy;
 import tracks.singlePlayer.advanced.MaastCTS2.selection.ISelectionStrategy;
-//import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2.utils.MctsVisualizer;
+//import tracks.singlePlayer.advanced.tracks.singlePlayer.custom.MaastCTS2Method1.utils.MctsVisualizer;
 import core.competition.CompetitionParameters;
 import core.game.StateObservation;
 import ontology.Types.ACTIONS;

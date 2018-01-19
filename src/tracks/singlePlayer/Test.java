@@ -26,8 +26,9 @@ public class Test {
 		String sampleOLETSController = "tracks.singlePlayer.advanced.olets.Agent";
 
 //		String customController = "tracks.singlePlayer.custom.sampleMCTS.Agent";
-		String customController = "tracks.singlePlayer.custom.olets.Agent";
-//		String customController = "tracks.singlePlayer.custom.MaastCTS2.Agent";
+//		String customController = "tracks.singlePlayer.custom.olets.Agent";
+//		String customController = "tracks.singlePlayer.custom.MaastCTS2Method1.Agent";
+		String customController = "tracks.singlePlayer.custom.MaastCTS2Method2.Agent";
 
 		//Load available games
 		String spGamesCollection =  "examples/all_games_sp.csv";

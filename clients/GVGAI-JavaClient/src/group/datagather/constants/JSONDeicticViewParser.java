@@ -14,12 +14,11 @@ import static group.datagather.constants.Constants.*;
 
 public class JSONDeicticViewParser implements Runnable {
 
-	private QuickSort quickSort;
+	static QuickSort quickSort= new QuickSort();
 	private JSONParser parser;
 	private File dataFile;
 
 	public JSONDeicticViewParser(File dataFile){
-		this.quickSort = new QuickSort();
 		this.parser = new JSONParser();
 		this.dataFile = dataFile;
 	}
@@ -75,9 +74,8 @@ public class JSONDeicticViewParser implements Runnable {
 		}
 	}
 
-	private JSONObject parseState(JSONObject state) {
+	static public JSONObject parseState(JSONObject state) {
 		JSONObject result = new JSONObject();
-
 		double blockSize = Double.parseDouble(state.get("blockSize").toString());
 		double width = Double.parseDouble(((JSONArray) state.get("worldDimension")).get(0).toString()) / blockSize;
 		double height = Double.parseDouble(((JSONArray) state.get("worldDimension")).get(1).toString()) / blockSize;
@@ -109,7 +107,7 @@ public class JSONDeicticViewParser implements Runnable {
 		}
 
 		// sorting
-		this.quickSort.sort(observationDistances);
+		quickSort.sort(observationDistances);
 		int size = Math.min(observationDistances.length, Constants.DV);
 
 		JSONArray selectedObservations = new JSONArray();

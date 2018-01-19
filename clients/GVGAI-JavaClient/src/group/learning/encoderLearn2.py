@@ -2,7 +2,7 @@ import os
 import sys
 from pathlib import Path
 import math
-from encoderGeneralFunctions import readJsonData, loadModel, loadModelWeights, readFolderData
+from encoderGeneralFunctions import readJsonData2, loadModel, loadModelWeights, readFolderData2
 
 from keras.models import Sequential
 from keras.layers import Dense
@@ -14,13 +14,15 @@ from keras.layers import Dense
 data = sys.argv[1]
 epochs = int(sys.argv[2])
 
+dvSize=10
+
 # Receive input/output data
 DATAPATH = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir, "res", "data", "preprocessed", data))
 
 if(DATAPATH[len(DATAPATH)-4:len(DATAPATH)] ==".txt"):
-    (inputObject, outputObject) = readJsonData(DATAPATH)
+    (inputObject, outputObject) = readJsonData2(DATAPATH,dvSize)
 elif Path(DATAPATH).exists():
-    (inputObject, outputObject) = readFolderData(DATAPATH)
+    (inputObject, outputObject) = readFolderData2(DATAPATH,dvSize)
 else:
     print("The given data file is neither a text file nor an existing folder")
 
