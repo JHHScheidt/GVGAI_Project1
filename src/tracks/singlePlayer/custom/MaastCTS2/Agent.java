@@ -78,17 +78,17 @@ public class Agent extends AbstractPlayer {
 
 	@Override
 	public ACTIONS act(StateObservation stateObs, ElapsedCpuTimer elapsedTimer) {
-		JSONObject object = new JSONObject();
-		JSONObject state = this.parseState(Utils.stateObservationToJSON(stateObs));
-		object.put("state", state);
+//		JSONObject object = new JSONObject();
+//		JSONObject state = this.parseState(Utils.stateObservationToJSON(stateObs));
+//		object.put("state", state);
 		Globals.knowledgeBase.update(stateObs);
 
 		// decide action
 		Types.ACTIONS result = controller.chooseAction(stateObs, elapsedTimer);
 
 		// store new data and set new state of previous action
-		object.put("action", result.toString());
-		this.data.add(object);
+//		object.put("action", result.toString());
+//		this.data.add(object);
 
 		//... and return it.
 		return result;
@@ -111,8 +111,8 @@ public class Agent extends AbstractPlayer {
 	 */
 	@Override
 	public void teardown(Game played) {
-		Thread thread = new Thread(new JSONSaver(this.data));
-		thread.start();
+//		Thread thread = new Thread(new JSONSaver(this.data));
+//		thread.start();
 		this.data = new ArrayList<>();
 
 		Constants.CURRENT_LEVEL_ID++;
@@ -122,13 +122,13 @@ public class Agent extends AbstractPlayer {
 			System.out.println(Constants.CURRENT_GAME_ITER);
 		}
 		else if(Constants.CURRENT_GAME_ITER == 50 && Constants.CURRENT_LEVEL_ID == 5) {
-			while (thread.isAlive()){
+//			while (thread.isAlive()){
 				try {
 					Thread.sleep(500);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-			}
+//			}
 			System.exit(0);
 		}
 
