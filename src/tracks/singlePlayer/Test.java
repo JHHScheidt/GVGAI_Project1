@@ -5,6 +5,7 @@ import java.util.Random;
 import core.logging.Logger;
 import tools.Utils;
 import tracks.ArcadeMachine;
+import tracks.singlePlayer.custom.Constants;
 
 /**
  * Created with IntelliJ IDEA. User: Diego Date: 04/10/13 Time: 16:29 This is a
@@ -12,7 +13,7 @@ import tracks.ArcadeMachine;
  */
 public class Test {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
 		// Available tracks:
 		String sampleRandomController = "tracks.singlePlayer.simple.sampleRandom.Agent";
@@ -21,8 +22,8 @@ public class Test {
 		String sampleFlatMCTSController = "tracks.singlePlayer.simple.greedyTreeSearch.Agent";
 
 		String sampleMCTSController = "tracks.singlePlayer.advanced.sampleMCTS.Agent";
-        String sampleRSController = "tracks.singlePlayer.advanced.sampleRS.Agent";
-        String sampleRHEAController = "tracks.singlePlayer.advanced.sampleRHEA.Agent";
+		String sampleRSController = "tracks.singlePlayer.advanced.sampleRS.Agent";
+		String sampleRHEAController = "tracks.singlePlayer.advanced.sampleRHEA.Agent";
 		String sampleOLETSController = "tracks.singlePlayer.advanced.olets.Agent";
 
 //		String customController = "tracks.singlePlayer.custom.sampleMCTS.Agent";
@@ -45,9 +46,9 @@ public class Test {
 		String level1 = game.replace(gameName, gameName + "_lvl" + levelIdx);
 
 		String recordActionsFile = null;// "actions_" + games[gameIdx] + "_lvl"
-						// + levelIdx + "_" + seed + ".txt";
-						// where to record the actions
-						// executed. null if not to save.
+		// + levelIdx + "_" + seed + ".txt";
+		// where to record the actions
+		// executed. null if not to save.
 
 		// 1. This starts a game, in a level, played by a human.
 //		ArcadeMachine.playOneGame(game, level1, recordActionsFile, seed);
@@ -57,8 +58,8 @@ public class Test {
 
 
 		// 3. This replays a game from an action file previously recorded
-	//	 String readActionsFile = recordActionsFile;
-	//	 ArcadeMachine.replayGame(game, level1, visuals, readActionsFile);
+		//	 String readActionsFile = recordActionsFile;
+		//	 ArcadeMachine.replayGame(game, level1, visuals, readActionsFile);
 
 		// 4. This plays a single game, in N levels, M times :
 //		String level2 = new String(game).replace(gameName, gameName + "_lvl" + 1);
@@ -75,7 +76,8 @@ public class Test {
 		boolean saveActions = false;
 		String[] levels = new String[L];
 		String[] actionFiles = new String[L*M];
-		for(int i = 111; i < N; ++i)
+
+		for (int i = Constants.CURRENT_GAME_ID; i < N; i += 0)
 		{
 			int actionIdx = 0;
 			game = games[i][0];
@@ -83,11 +85,9 @@ public class Test {
 			for(int j = 0; j < L; ++j){
 				levels[j] = game.replace(gameName, gameName + "_lvl" + j);
 				if(saveActions) for(int k = 0; k < M; ++k)
-				actionFiles[actionIdx++] = "actions_game_" + i + "_level_" + j + "_" + k + ".txt";
+					actionFiles[actionIdx++] = "actions_game_" + i + "_level_" + j + "_" + k + ".txt";
 			}
 			ArcadeMachine.runGames(game, levels, M, customController, saveActions? actionFiles:null);
 		}
-
-
-    }
+	}
 }

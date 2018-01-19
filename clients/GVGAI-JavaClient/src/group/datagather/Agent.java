@@ -38,7 +38,7 @@ public class Agent extends AbstractPlayer {
 		this.network.init();
 
 		try {
-			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "weights.txt");
+			this.network.loadWeights(Constants.NETWORK_WEIGHTS_DIR + "weights_Aliens_48s_38s_28s_18s_8s_3s_8s_18s_28s_38s_47_mean_squared_error_adam.txt");
 		} catch (IOException e) {
 			System.err.println("Loading the weights went wrong! quitting");
 			System.exit(0);
@@ -102,6 +102,7 @@ public class Agent extends AbstractPlayer {
 		for (Types.ACTIONS action : sso.getAvailableActions()) {
 			networkInput[networkInput.length - 1] = action.ordinal() / Constants.AVAILABLE_ACTIONS;
 			double[] output = this.network.compute(networkInput);
+			System.out.println(Arrays.toString(output));
 			double qValue = this.learner.findValue(output);
 			if (qValue > bestQValue) {
 				bestQValue = qValue;

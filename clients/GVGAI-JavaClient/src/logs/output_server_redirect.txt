@@ -1,3 +1,27 @@
 Listening for transport dt_socket at address: 8888
 [GAME] Game idx:0 game name aliens
 [PHASE] Starting First Phase of Training in 3 levels.
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:448
+[TRAINING] Result (1->win; 0->lose): level:1, Player0:1, Player0-Score:42.0, timesteps:479
+[TRAINING] Result (1->win; 0->lose): level:2, Player0:1, Player0-Score:41.0, timesteps:786
+[PHASE] Starting Second Phase of Training in 3 levels.
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:583
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:39.0, timesteps:384
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:402
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:362
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:775
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:493
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:39.0, timesteps:898
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:402
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:447
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:447
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:33.0, timesteps:383
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:33.0, timesteps:786
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:21.0, timesteps:271
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:447
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:23.0, timesteps:270
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:449
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:0, Player0-Score:15.0, timesteps:192
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:623
+[TRAINING] Result (1->win; 0->lose): level:0, Player0:1, Player0-Score:42.0, timesteps:463
+[PHASE] Starting Validation in 2 levels.
